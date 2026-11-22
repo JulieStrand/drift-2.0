@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://www.drift-la.com/images/retina/hero1_karl-miller-center.jpeg"
+    />
+    <title>About - DRIFT</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" type="image/png" href="images/DRIFTfavicon.png" />
+  </head>
+  <body class="bg-white text-black">
+    <!-- Projects Page Header -->
+    <header class="projects-header inset-x-0 top-0 md:pl-12">
+      <h1>
+        <a href="index.html" class="site-logo">
+          <img
+            src="/images/DRIFT-logo-black.svg"
+            alt="DRIFT logo"
+            class="block h-10 sm:w-[12.5vw] sm:h-auto ml-4 sm:ml-0"
+          />
+        </a>
+      </h1>
+
+      <nav class="projects-nav">
+        <a href="projects.html">Projects</a>
+        <a href="services.html" class="!text-black">Services</a>
+        <a href="#">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- hamburger button -->
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open main menu"
+        class="md:hidden p-2 mr-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white text-black"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <!-- mobile nav -->
+      <nav
+        id="mobile-menu"
+        aria-labelledby="mobile-menu-btn"
+        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+      >
+        <div class="space-y-4 p-4">
+          <a href="projects.html" class="block hover:underline">Projects</a>
+          <a href="services.html" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">Experience</a>
+          <a href="about.html" class="block hover:underline">About</a>
+          <a href="contact.html" class="block hover:underline">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="project-container md:pl-[37.5%]">
+      <div class="project-text mb-8">
+        <p class="!font-medium">SERVICES</p>
+        <p>
+          DRIFT provides landscape architectural design services for
+          residential, institutional, commercial, and public projects, from
+          early site planning and concept design through permitting,
+          construction documentation and implementation.
+        </p>
+
+        <!-- Two-Column List -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 md:pl-12 mt-8 mb-6"
+        >
+          <!-- Left Column -->
+          <div class="flex flex-col">
+            <span>Landscape Architecture</span>
+            <span>Site Planning + Design</span>
+            <span>Landscape on Structure</span>
+            <span>Planting Design</span>
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col">
+            <span>Construction Documentation</span>
+            <span>Permitting + Agency Coordination</span>
+            <span>Visualization</span>
+            <span>Bidding + Construction Observation</span>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <figure>
+          <picture class="services-images">
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/25001-Back-Deck.webp 1920w,
+                images/retina/25001-Back-Deck.webp  3840w
+              "
+            />
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/25001-Back-Deck.webp 640w"
+            />
+
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/25001-Back-Deck.jpeg 1920w,
+                images/retina/25001-Back-Deck.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/25001-Back-Deck.jpeg 640w"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/25001-Back-Deck.jpeg"
+              alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
+              class="!object-[50%_20%]"
+            />
+          </picture>
+        </figure>
+
+        <!-- Text section -->
+        <p class="mt-12 !font-medium">PROJECT TYPES</p>
+        <!-- Two-Column List -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-2 md:pl-12 mt-4 mb-8"
+        >
+          <!-- Left Column -->
+          <div class="flex flex-col">
+            <span>Residential</span>
+            <span>Parks + Open Spave</span>
+            <span>Civic + Public Realm</span>
+          </div>
+
+          <!-- Middle Column -->
+          <div class="flex flex-col">
+            <span>Education</span>
+            <span>Healthcare</span>
+            <span>Transportation + Infrastrucuture</span>
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col">
+            <span>Airports</span>
+            <span>Adaptive Reuse</span>
+            <span>Lanscape on Structure</span>
+          </div>
+        </div>
+        <p>
+          DRIFT draws on more than two decades of professional experience
+          working independently and as part of multidisciplinary teams on
+          projects ranging from private residential landscapes to complex public
+          infrastructure.
+        </p>
+        <p class="mt-8 font-condensed">
+          <a href="#" class="!font-medium hover:underline">VIEW EXPERIENCE ></a>
+        </p>
+        <p class="mt-8">
+          <span class="!font-medium">PROCESS</span><br />01 — LISTEN<br />Site
+          conditions, project goals, site program, opportunities + constraints.
+        </p>
+        <p class="mt-4">
+          02 — EXPLORE<br />Ideas, spatial organization, materials, planting +
+          character.
+        </p>
+        <p class="mt-4">
+          03 — DEVELOP<br />Refine the preferred design and coordinate technical
+          requirements.
+        </p>
+        <p class="mt-4">
+          04 — DOCUMENT<br />Prepare drawings and specifi cations appropriate
+          for permitting, pricing + construction.
+        </p>
+        <p class="mt-4">
+          05 — IMPLEMENT<br />Assist with permitting, bidding, contractor
+          coordination + construction observation.
+        </p>
+
+        <figure>
+          <picture class="services-images overflow-hidden">
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Site-Plan.webp 1920w,
+                images/retina/MI-Site-Plan.webp  3840w
+              "
+            />
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Site-Plan.webp 640w"
+            />
+
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Site-Plan.jpeg 1920w,
+                images/retina/MI-Site-Plan.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Site-Plan.jpeg 640w"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/MI-Site-Plan.jpeg"
+              alt="Schematic drawing of the Michigan residence site plan"
+              class="!scale-[1.86] !object-[50%_75%]"
+            />
+          </picture>
+        </figure>
+
+        <figure>
+          <picture class="services-images overflow-hidden">
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Residence1.webp 1920w,
+                images/retina/MI-Residence1.webp  3840w
+              "
+            />
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Residence1.webp 640w"
+            />
+
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Residence1.jpeg 1920w,
+                images/retina/MI-Residence1.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Residence1.jpeg 640w"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/MI-Residence1.jpeg"
+              alt="Schematic drawing of the Michigan residence site plan"
+              class="!scale-[1.86] !object-[50%_75%]"
+            />
+          </picture>
+        </figure>
+        <p class="mt-12 !font-medium">EVERY PROJECT IS DIFFERENT</p>
+        <p>
+          The appropriate scope depends on the site, project complexity,
+          jurisdiction and desired level of involvement. DRIFT develops a
+          project-specifi c scope following an initial conversation and review
+          of available site information.
+        </p>
+        <p class="mt-4">
+          Projects may also require surveyors, arborists, architects, engineers,
+          or other specialists. DRIFT can help identify these needs and
+          coordinate with the broader project team.
+        </p>
+        <p class="mt-8 !font-medium">FEES</p>
+        <p>
+          Fees are developed based on project scale, complexity, schedule and
+          scope of services. Depending on the project, services may be provided
+          on a fixed-fee, hourly or phased basis.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer inset-x-0 bottom-0">
+      © 2025 DRIFT Landscape Architecture, LLC
+      <br class="sm:hidden" />
+      <span class="hidden sm:inline"> | </span>
+      Portland, OR | 503.928.3702| tim@drift-la.com
+    </footer>
+  </body>
+</html>

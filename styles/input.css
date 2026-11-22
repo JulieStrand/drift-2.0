@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for Tailwind v4 - didn't work
+@import "tailwindcss/index.css";
+@config "../tailwind.config.js"; */
+
+/* new layer for fixing mobile slide show */
+@layer base {
+  /* Add this rule to ensure the core document is full-height */
+  html,
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .site-hero {
+    @apply relative w-full lg:min-h-screen lg:overflow-hidden;
+  }
+  .desktop-hero {
+    @apply hidden xl:block relative min-h-screen text-white; /* creates a positioning context */
+  }
+  .about-hero {
+    @apply relative w-full h-auto aspect-[19/9] overflow-hidden my-10;
+  }
+  .slideshow {
+    @apply absolute z-0;
+  }
+  .desktop-hero .slideshow {
+    @apply absolute inset-0 z-0; /* fills the viewport behind the header */
+  }
+
+  .site-header {
+    @apply fixed inset-x-0 top-0 z-20
+           px-4 sm:px-6 lg:px-8
+           h-16 md:h-20 lg:h-[2in]  
+           /* mobile: logo left, hamburger right */
+           flex items-center justify-between
+           /* desktop: push header content down a bit */
+           md:items-start md:pt-6
+           /* default mobile: white bg, black text */
+           bg-white lg:bg-transparent text-black
+           /* desktop override: gradient bg, white text */
+           lg:bg-gradient-to-b lg:from-black/75 lg:to-transparent lg:text-white
+           font-sans font-medium;
+  }
+
+  .site-logo {
+    @apply text-xl sm:text-[36pt] font-semibold text-black lg:text-white;
+  }
+
+  .site-nav {
+    @apply hidden md:flex mr-6 space-x-5
+           font-medium text-sm lg:text-[14pt];
+  }
+
+  /* Mobile hamburger: visible until md */
+  .site-menu-btn {
+    @apply md:hidden p-2 mr-4 z-10
+         focus:outline-none focus:ring-2 focus:ring-inset focus:ring-current;
+  }
+
+  /* Push first content below fixed header on mobile only */
+  .pt-header {
+    @apply pt-16 sm:pt-0;
+  }
+
+  /* Slightly taller black gaps between items on mobile */
+  .space-y-gap {
+    @apply space-y-6 sm:space-y-0; /* adjust to space-y-8 if you want more */
+  }
+
+  /* Full-bleed images */
+  .stack-image {
+    @apply block w-full h-auto object-cover;
+  }
+
+  /* Optional: keep logo legible over photos */
+  .drop-shadow-logo {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+  }
+
+  /* Accessible tap target for the hamburger (mobile only style) */
+  .hamburger {
+    @apply p-2 -m-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white/50;
+  }
+
+  .credit {
+    @apply absolute z-10
+           fade-credit text-white font-sans text-[10pt];
+  }
+  .bottom-fade {
+    @apply absolute
+           /* a moderate fade on phones */
+           h-20
+           /* a bit taller on tablets and up */
+           sm:h-32
+           /* keep it if you want an even taller fade on desktop */
+           /* md:h-40 */
+           bg-gradient-to-t from-black/50 to-transparent
+           pointer-events-none;
+  }
+  .site-footer {
+    @apply relative w-full z-30 font-condensed font-light
+          /* mobile typography (slightly smaller) then bump up on sm/md */
+           text-xs sm:text-sm md:text-[9pt]
+           /* gutters: narrow on phones, then wider as viewport grows */
+           px-4 sm:px-6 lg:px-8
+  
+           py-4
+           text-center;
+  }
+  .address p {
+    margin: 0; /* removes top & bottom space */
+    line-height: 1.2; /* optional: tighten spacing */
+  }
+  /* Home page ONLY (index.html): dark on mobile, light on md+ */
+  /* .home .site-footer {
+    @apply !text-white !bg-black md:text-black md:bg-white;
+  } */
+
+  /* MOBILE-ONLY  */
+  /* Scrollable viewport for the stack */
+  #mobile-stack {
+    /* This positions the container below the 4rem (h-16) header */
+    @apply pt-16 md:pt-20;
+  }
+
+  /* add gradients to top and bottom of mobile home page stack */
+  .fade-top {
+    @apply absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/50 to-transparent;
+  }
+  .fade-bottom {
+    @apply absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent;
+  }
+
+  /* Your title already, now also reveals when card is “active” */
+  /* .projects-titles {
+    @apply block w-[75%] text-center
+         font-light text-[16pt]
+         tracking-wider leading-tight
+         opacity-0
+         group-hover:opacity-100 group-[.is-active]:opacity-100
+         transition duration-300;
+  } */
+
+  /* PROJECTS page classes */
+  /* White header variant for Projects page */
+  .projects-header {
+    @apply fixed z-20 inset-y-0 left-0
+       flex items-center justify-between
+       md:flex-col md:items-start md:justify-start
+       px-4 sm:px-6 lg:px-8
+       h-14 w-full
+       md:h-screen md:w-1/3 md:pt-6
+       bg-white
+       font-sans font-medium;
+  }
+  /* the nav container:
+     – stacked vertical on phones
+     – horizontal row on ≥768px */
+  .projects-nav {
+    @apply hidden
+           md:flex md:flex-col
+           self-start w-full
+           mt-4 space-y-2
+           font-light text-sm lg:text-[16pt];
+  }
+  /* Grey nav links that go black+underline on hover/active */
+  .projects-nav a {
+    @apply text-gray-400
+           hover:text-black hover:underline;
+  }
+  /* the logo text */
+  .projects-logo {
+    @apply text-xl        /* mobile */
+           sm:text-[36pt] /* ≥640px */
+           font-semibold text-gray-500;
+  }
+  .projects-titles {
+    @apply block w-[75%] text-center 
+           font-light text-[18pt]
+            leading-tight
+           opacity-0 group-hover:opacity-100
+           transition duration-300;
+  }
+  .group.touched .project-overlay {
+    @apply bg-opacity-75;
+  }
+  .group.touched .projects-titles {
+    @apply opacity-100;
+  }
+
+  .project-link {
+    @apply absolute z-10
+           fade-link text-white font-sans font-bold hover:underline
+           text-sm
+           md:text-lg
+           xl:text-[24px];
+  }
+
+  /* PROJECT PAGES classes */
+  .project-container {
+    @apply pt-10 sm:pt-[92px] pb-4 sm:pb-[0.25in] px-6 sm:px-[0.375in] w-full md:pr-12 md:pl-[37.5%];
+  }
+  .project-hero {
+    @apply relative w-full h-auto overflow-hidden mb-[0.275in];
+  }
+  .project-header {
+    @apply flex flex-col sm:flex-row sm:items-baseline sm:space-x-4;
+  }
+  .project-title {
+    @apply font-sans font-light text-[18pt] leading-none;
+  }
+  .project-specs {
+    @apply font-condensed font-medium text-[10pt] leading-tight;
+  }
+  .project-divider {
+    @apply border-t border-black w-full mb-5;
+    border-top-width: 1px;
+  }
+  .project-text {
+    @apply font-condensed font-light text-[10pt] leading-tight;
+  }
+  .project-text p {
+    @apply font-condensed font-light text-[10pt] leading-tight;
+  }
+  .project-image {
+    @apply block w-full object-cover;
+  }
+
+  .project-meta {
+    @apply mt-4 sm:mt-5
+           grid
+           grid-cols-1        /* Default for mobile: A single vertical column */
+           gap-8 
+           lg:gap-y-6 /* vertical gutter */
+           lg:gap-x-[1.3rem] /* horizontal gutter between table & paragraphs */
+           lg:grid-cols-[minmax(25ch,max-content)_1fr_5fr]; /* three explicit track */
+  }
+
+  .project-meta th {
+    @apply font-normal;
+  }
+  .project-meta table {
+    @apply border-collapse;
+  }
+  .project-meta tr + tr th {
+    padding-top: 0.5rem; /* adjust to taste—0.5rem ≈ the paragraph gap you want */
+  }
+  .project-meta tr + tr td {
+    padding-top: 0.5rem; /* adjust to taste—0.5rem ≈ the paragraph gap you want */
+  }
+
+  .project-images {
+    @apply grid
+           grid-cols-1        /* 1 col on mobile */
+           gap-[0.25in]      /* 1/4″ gap between images */
+           mt-[0.25in]; /* 1/4″ gap above this section */
+  }
+
+  .project-images img {
+    @apply block w-full aspect-[19/10] object-cover; /* 16:9 */
+  }
+
+  .services-images {
+    @apply grid
+           grid-cols-1        /* 1 col on mobile */
+           mt-[0.5in] /* 1/2″ gap above this section */
+           mb-[0.25in]; /* 1/4″ gap below this section */
+  }
+
+  .services-images img {
+    @apply block w-full aspect-[19/9] object-cover;
+  }
+
+  .figcaption {
+    @apply mt-4 text-sm leading-snug text-gray-700 max-w-[78ch] ml-4 sm:ml-12 mr-4 sm:mr-0;
+  }
+}
+
+@layer utilities {
+  .fade-image {
+    @apply absolute w-full h-full object-cover;
+    opacity: 0;
+    transform-origin: center center;
+    object-position: center 50%;
+  }
+
+  .fade-image.hide {
+    opacity: 0 !important;
+    animation: none !important;
+  }
+
+  /* --- Desktop Pan Animations --- */
+
+  .fade-image.pan-lr {
+    animation:
+      pan-lr 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+  .fade-image.pan-rl {
+    animation:
+      pan-rl 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+
+  .fade-image.pan-dr {
+    animation:
+      pan-dr 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+  .fade-image.pan-dl {
+    animation:
+      pan-dl 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+  .fade-image.pan-ur {
+    animation:
+      pan-ur 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+  .fade-image.pan-ul {
+    animation:
+      pan-ul 13s linear both,
+      fade-in-out 10s ease-in-out both;
+  }
+
+  .fade-link {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .fade-link.show {
+    pointer-events: auto;
+    animation: fade-in-out 10s ease-in-out both;
+  }
+  .fade-link.hide {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+  .fade-credit {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .fade-credit.show {
+    pointer-events: auto;
+    animation: fade-in-out 10s ease-in-out both;
+  }
+  .fade-credit.hide {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
+
+/* --- GLOBAL ANIMATIONS --- */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pan-dr {
+  from {
+    transform: scale(1.1) translate(-3%, -3%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(3%, 3%);
+    /* translateZ(0); */
+  }
+}
+@keyframes pan-dl {
+  from {
+    transform: scale(1.1) translate(3%, -3%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(-3%, 3%);
+    /* translateZ(0); */
+  }
+}
+@keyframes pan-ur {
+  from {
+    transform: scale(1.1) translate(-3%, 3%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(3%, -3%);
+    /* translateZ(0); */
+  }
+}
+@keyframes pan-ul {
+  from {
+    transform: scale(1.1) translate(3%, 3%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(-3%, -3%);
+    /* translateZ(0); */
+  }
+}
+@keyframes pan-lr {
+  from {
+    transform: scale(1.1) translate(-3%, 0%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(3%, 0%);
+    /* translateZ(0); */
+  }
+}
+@keyframes pan-rl {
+  from {
+    transform: scale(1.1) translate(3%, 0%);
+    /* translateZ(0); */
+  }
+  to {
+    transform: scale(1.1) translate(-3%, 0%);
+    /* translateZ(0); */
+  }
+}
