@@ -82,15 +82,15 @@
             type="image/webp"
             media="(min-width:1280px)"
             srcset="
-              images/desktop/26002-Front-Entry.webp 1920w,
-              images/retina/26002-Front-Entry.webp  3840w
+              images/desktop/26002-Front-Entry-2.webp 1920w,
+              images/retina/26002-Front-Entry-2.webp  3840w
             "
           />
           <!-- WebP sources for mobile -->
           <source
             type="image/webp"
             media="(max-width:1279px)"
-            srcset="images/mobile/26002-Front-Entry.webp 640w"
+            srcset="images/mobile/26002-Front-Entry-2.webp 640w"
           />
 
           <!-- JPEG fallbacks for desktop -->
@@ -98,20 +98,20 @@
             type="image/jpeg"
             media="(min-width:1280px)"
             srcset="
-              images/desktop/26002-Front-Entry.jpeg 1920w,
-              images/retina/26002-Front-Entry.jpeg  3840w
+              images/desktop/26002-Front-Entry-2.jpeg 1920w,
+              images/retina/26002-Front-Entry-2.jpeg  3840w
             "
           />
           <!-- JPEG fallbacks for mobile -->
           <source
             type="image/jpeg"
             media="(max-width:1279px)"
-            srcset="images/mobile/26002-Front-Entry.jpeg 640w"
+            srcset="images/mobile/26002-Front-Entry-2.jpeg 640w"
           />
 
           <!-- Fallback image -->
           <img
-            src="images/mobile/26002-Front-Entry.jpeg"
+            src="images/mobile/26002-Front-Entry-2.jpeg"
             alt="Front facadde of a white, 2-story house with a yard and plantings"
             class="w-full h-full object-cover"
           />
@@ -151,6 +151,7 @@
         </div>
       </div>
 
+      <!-- Image container -->
       <div class="project-images">
         <!-- Image 2 -->
         <picture class="overflow-hidden">
@@ -175,7 +176,7 @@
           <!-- ultimate fallback -->
           <img
             src="images/desktop/26002-Illustrative-Plan.jpeg"
-            alt="Detail of front door and plantings at Michigan residence"
+            alt="#"
             loading="lazy"
             class="!scale-150"
             srcset="
@@ -205,7 +206,7 @@
 
           <img
             src="images/desktop/26002-Driveway.jpeg"
-            alt="View of the terraced veggie garden with plantings and retainer wall at the base"
+            alt="#"
             loading="lazy"
             class="!object-[50%_86%]"
             srcset="
@@ -235,7 +236,7 @@
 
           <img
             src="images/desktop/26002-Frontage.jpeg"
-            alt="Back deck and fire put overlooking the West Hills"
+            alt="#"
             loading="lazy"
             class="!object-[50%_71%]"
             srcset="
@@ -265,7 +266,7 @@
 
           <img
             src="images/desktop/26002-Backyard.jpeg"
-            alt="Back yard with backetball court, concrete pavers, and perimeter plantings"
+            alt="#"
             loading="lazy"
             class="!object-[50%_40%]"
             srcset="
@@ -276,34 +277,39 @@
         </picture>
 
         <!-- Image 6 -->
-        <picture class="overflow-hidden">
-          <source
-            media="(min-width:641px)"
-            srcset="
-              images/desktop/26002-Existing.webp 1x,
-              images/retina/26002-Existing.webp  2x
-            "
-          />
+        <div class="relative">
+          <picture class="overflow-hidden">
+            <source
+              media="(min-width:641px)"
+              srcset="
+                images/desktop/26002-Existing.webp 1x,
+                images/retina/26002-Existing.webp  2x
+              "
+            />
 
-          <source
-            media="(max-width:640px)"
-            srcset="
-              images/mobile/26002-Existing.webp 1x,
-              images/mobile/26002-Existing.webp 2x
-            "
-          />
+            <source
+              media="(max-width:640px)"
+              srcset="
+                images/mobile/26002-Existing.webp 1x,
+                images/mobile/26002-Existing.webp 2x
+              "
+            />
 
-          <img
-            src="images/desktop/26002-Existing.jpeg"
-            alt="Back yard with backetball court, concrete pavers, and perimeter plantings"
-            loading="lazy"
-            class="!object-[50%_23%] !scale-110"
-            srcset="
-              images/desktop/26002-Existing.jpeg 1x,
-              images/retina/26002-Existing.jpeg  2x
-            "
-          />
-        </picture>
+            <img
+              src="images/desktop/26002-Existing.jpeg"
+              alt="#"
+              loading="lazy"
+              class="!object-[50%_23%] !scale-110"
+              srcset="
+                images/desktop/26002-Existing.jpeg 1x,
+                images/retina/26002-Existing.jpeg  2x
+              "
+            />
+          </picture>
+          <span class="absolute bottom-3 left-3 z-20 project-title text-white"
+            >Existing</span
+          >
+        </div>
       </div>
     </main>
 

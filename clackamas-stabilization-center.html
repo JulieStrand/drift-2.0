@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://www.drift-la.com/images/retina/MI-Residence3.jpeg"
+    />
+    <title>Clackamas County Stabilization Center — DRIFT</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" type="image/png" href="images/DRIFTfavicon.png" />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Projects Page Header -->
+    <header class="projects-header inset-x-0 top-0 md:pl-12">
+      <h1>
+        <a href="index.html" class="site-logo">
+          <img
+            src="/images/DRIFT-logo-black.svg"
+            alt="DRIFT logo"
+            class="block h-10 sm:w-[12.5vw] sm:h-auto ml-4 sm:ml-0"
+          />
+        </a>
+      </h1>
+
+      <nav class="projects-nav">
+        <a href="projects.html" class="!text-black">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="#">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- hamburger button -->
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open main menu"
+        class="md:hidden p-2 mr-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white text-black"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <!-- mobile nav -->
+      <nav
+        id="mobile-menu"
+        aria-labelledby="mobile-menu-btn"
+        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+      >
+        <div class="space-y-4 p-4">
+          <a href="projects.html" class="block hover:underline">Projects</a>
+          <a href="services.html" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">Experience</a>
+          <a href="about.html" class="block hover:underline">About</a>
+          <a href="contact.html" class="block hover:underline">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Container -->
+    <main class="project-container">
+      <!-- Hero Image -->
+      <figure class="project-hero aspect-[3/2]">
+        <picture>
+          <!-- WebP sources for desktop -->
+          <source
+            type="image/webp"
+            media="(min-width:1280px)"
+            srcset="
+              images/desktop/25002-Patio.webp 1920w,
+              images/retina/25002-Patio.webp  3840w
+            "
+          />
+          <!-- WebP sources for mobile -->
+          <source
+            type="image/webp"
+            media="(max-width:1279px)"
+            srcset="images/mobile/25002-Patio.webp 640w"
+          />
+
+          <!-- JPEG fallbacks for desktop -->
+          <source
+            type="image/jpeg"
+            media="(min-width:1280px)"
+            srcset="
+              images/desktop/25002-Patio.jpeg 1920w,
+              images/retina/25002-Patio.jpeg  3840w
+            "
+          />
+          <!-- JPEG fallbacks for mobile -->
+          <source
+            type="image/jpeg"
+            media="(max-width:1279px)"
+            srcset="images/mobile/25002-Patio.jpeg 640w"
+          />
+
+          <!-- Fallback image -->
+          <img
+            src="images/mobile/25002-Patio.jpeg"
+            alt="#"
+            class="absolute inset-0 w-full h-full scale-[1.08] object-cover object-top translate-x-7"
+          />
+        </picture>
+      </figure>
+
+      <!-- Caption -->
+      <div class="space-y-1 sm:space-y-3">
+        <div class="project-header">
+          <h1 class="project-title">Clackamas County Stabilization Center</h1>
+        </div>
+        <div class="project-text">
+          Located along Johnson Creek, the Clackamas County Stabilization Center
+          provides short-term care and transitional housing for adults
+          experiencing mental health crises and other signifi cant life
+          challenges. The landscape design extends the facility’s supportive
+          environment outdoors, creating a safe, welcoming space for rest, refl
+          ection, and quiet social interaction within a lush, restorative
+          setting.
+        </div>
+        <div class="project-text">
+          Two garden patios feature permeable paving and offer fl exible spaces
+          for conversation, card games, or simply spending time outside.
+          Sweeping bands of riparian-inspired planting soften the paved areas,
+          drawing on the meandering character of Johnson Creek and creating a
+          sense of shelter beneath the site’s mature trees. Along an existing
+          creekside path, benches are positioned to overlook the water, offering
+          moments of solitude and opportunities to observe the birds and other
+          wildlife that inhabit this dynamic urban waterway.
+        </div>
+        <div class="project-text">
+          Native and regionally adapted plantings bring seasonal variation,
+          texture, and habitat value to the landscape. Together, the gardens and
+          creekside spaces provide opportunities to connect with nature, fi nd
+          moments of calm, and experience the restorative qualities of the
+          outdoors as part of a broader environment of care, dignity, and
+          recovery.
+        </div>
+        <div class="project-specs">
+          Location: <span class="font-light">Portland, OR</span>
+          <br />
+          Collaborators: <span class="font-light">EM Architecture</span><br />
+          Status: <span class="font-light">Under Construction</span>
+        </div>
+      </div>
+
+      <!-- Image container -->
+      <div class="project-images">
+        <!-- Image 2 -->
+        <picture class="overflow-hidden">
+          <source
+            media="(min-width:641px)"
+            type="image/webp"
+            srcset="
+              images/desktop/25002-Illustrative-Plan.webp 1x,
+              images/retina/25002-Illustrative-Plan.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            type="image/webp"
+            srcset="
+              images/mobile/25002-Illustrative-Plan.webp 1x,
+              images/mobile/25002-Illustrative-Plan.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/25002-Illustrative-Plan.jpeg"
+            alt="#"
+            loading="lazy"
+            class="object-bottom"
+            srcset="
+              images/desktop/25002-Illustrative-Plan.jpeg 1x,
+              images/retina/25002-Illustrative-Plan.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 3 -->
+
+        <div class="relative">
+          <picture class="overflow-hidden">
+            <source
+              media="(min-width:641px)"
+              type="image/webp"
+              srcset="
+                images/desktop/25002-Existing.webp 1x,
+                images/retina/25002-Existing.webp  2x
+              "
+            />
+
+            <source
+              media="(max-width:640px)"
+              type="image/webp"
+              srcset="
+                images/mobile/25002-Existing.webp 1x,
+                images/mobile/25002-Existing.webp 2x
+              "
+            />
+
+            <img
+              src="images/desktop/25002-Existing.jpeg"
+              alt="#"
+              class="object-[50%_10%]"
+              loading="lazy"
+              srcset="
+                images/desktop/25002-Existing.jpeg 1x,
+                images/retina/25002-Existing.jpeg  2x
+              "
+            />
+          </picture>
+          <span class="absolute bottom-3 left-3 z-20 project-title text-white"
+            >Existing</span
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer inset-x-0 bottom-0" role="contentinfo">
+      © 2025 DRIFT Landscape Architecture, LLC
+      <br class="sm:hidden" />
+      <span class="hidden sm:inline"> | </span>
+      Portland, OR | 503.928.3702 | tim@drift-la.com
+    </footer>
+
+    <script>
+      // MOBILE MENU TOGGLE
+      const mobileBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // ensure initial aria state
+      mobileBtn.setAttribute("aria-expanded", "false");
+      mobileBtn.addEventListener("click", () => {
+        // toggle visibility
+        const isOpen = !mobileMenu.classList.toggle("hidden");
+        // update aria-expanded for a11y
+        mobileBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+    </script>
+  </body>
+</html>

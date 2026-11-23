@@ -7,7 +7,7 @@
       property="og:image"
       content="https://www.drift-la.com/images/retina/hero1_karl-miller-center.jpeg"
     />
-    <title>About - DRIFT</title>
+    <title>Services - DRIFT</title>
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="icon" type="image/png" href="images/DRIFTfavicon.png" />
   </head>
@@ -70,41 +70,220 @@
         </div>
       </nav>
     </header>
+    <main class="project-container">
+      <div class="mb-8">
+        <!-- Hero Image -->
+        <figure class="relative mb-[0.25in]">
+          <picture class="services-hero">
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Residence-7.webp 1920w,
+                images/retina/MI-Residence-7.webp  3840w
+              "
+            />
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Residence-7.webp 640w"
+            />
 
-    <main class="project-container md:pl-[37.5%]">
-      <div class="project-text mb-8">
-        <p class="!font-medium">SERVICES</p>
-        <p>
-          DRIFT provides landscape architectural design services for
-          residential, institutional, commercial, and public projects, from
-          early site planning and concept design through permitting,
-          construction documentation and implementation.
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/MI-Residence-7.jpeg 1920w,
+                images/retina/MI-Residence-7.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/MI-Residence-7.jpeg 640w"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/MI-Residence-7.jpeg"
+              alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
+              class="scale-[1.40] origin-left translate-y-6"
+            />
+          </picture>
+          <div class="fade-top-services"></div>
+          <h1
+            class="absolute top-4 left-6 md:top-5 md:left-10 z-10 text-white font-sans font-medium text-[36pt] tracking-normal"
+          >
+            From possibility to place.
+          </h1>
+        </figure>
+
+        <p class="font-sans font-light text-[18pt] leading-tight">
+          DRIFT provides landscape architectural design and planning for private
+          and<br />public environments, working across scales and complexities,
+          from the earliest explorations of a site&apos;s potential to the
+          creation of meaningful, lasting places.
+        </p>
+        <p class="font-sans font-medium text-[18pt] leading-tight mt-10">
+          What we do.
         </p>
 
         <!-- Two-Column List -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 md:pl-12 mt-8 mb-6"
+          class="grid grid-cols-1 md:grid-cols-[max-content_max-content] gap-x-52 gap-y-2 md:pl-7 mt-4 mb-6"
         >
           <!-- Left Column -->
-          <div class="flex flex-col">
+          <div class="flex flex-col project-text !text-sm">
+            <span class="font-medium">DESIGN + PLANNING</span>
+            <span>Site Planning</span>
+            <span>Conceptual Design</span>
             <span>Landscape Architecture</span>
-            <span>Site Planning + Design</span>
-            <span>Landscape on Structure</span>
             <span>Planting Design</span>
+            <span>3D Modeling + Visualization </span>
           </div>
 
           <!-- Right Column -->
-          <div class="flex flex-col">
+          <div class="flex flex-col project-text !text-sm">
+            <span class="font-medium">TECHNICAL + IMPLEMENTATION</span>
+            <span>Design Development</span>
             <span>Construction Documentation</span>
             <span>Permitting + Agency Coordination</span>
-            <span>Visualization</span>
-            <span>Bidding + Construction Observation</span>
+            <span>Bidding Assistance</span>
+            <span>Construction-Phase Services</span>
           </div>
         </div>
 
-        <!-- Hero Image -->
-        <figure>
-          <picture class="services-images">
+        <p class="font-sans font-medium text-[18pt] leading-tight mt-16">
+          Across scales.
+        </p>
+        <p class="project-text !text-sm mt-4">
+          Drawing on more than two decades of professional experience, DRIFT
+          brings expertise across residential, institutional, civic, and
+          infrastructure projects.
+        </p>
+
+        <!-- Two-Column List -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-[max-content_max-content] gap-x-52 gap-y-2 md:pl-7 mt-4 mb-6"
+        >
+          <!-- Left Column -->
+          <div class="flex flex-col project-text !text-sm">
+            <span>Residential</span>
+            <span>Civic + Public Realm</span>
+            <span>Parks + Open Space</span>
+            <span>Education</span>
+            <span>Healthcare</span>
+          </div>
+
+          <!-- Right Column -->
+          <div class="flex flex-col project-text !text-sm">
+            <span>Transportation + Infrastructure</span>
+            <span>Landscape on Structure</span>
+            <span>Adaptive Reuse</span>
+            <span>Airports</span>
+            <span>Commercial</span>
+          </div>
+        </div>
+
+        <!-- Text section -->
+        <p class="project-text !font-medium !text-base mb-12">
+          VIEW EXPERIENCE >
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 aspect-[24/10] !mb-4">
+          <figure class="!m-0">
+            <picture class="w-full h-full block overflow-hidden">
+              <!-- WebP sources for desktop -->
+              <source
+                type="image/webp"
+                media="(min-width:1280px)"
+                srcset="
+                  images/desktop/25001-Illustrative-Plan.webp 1920w,
+                  images/retina/25001-Illustrative-Plan.webp  3840w
+                "
+              />
+              <!-- WebP sources for mobile -->
+              <source
+                type="image/webp"
+                media="(max-width:1279px)"
+                srcset="images/mobile/25001-Illustrative-Plan.webp 640w"
+              />
+
+              <!-- JPEG fallbacks for desktop -->
+              <source
+                type="image/jpeg"
+                media="(min-width:1280px)"
+                srcset="
+                  images/desktop/25001-Illustrative-Plan.jpeg 1920w,
+                  images/retina/25001-Illustrative-Plan.jpeg  3840w
+                "
+              />
+              <!-- JPEG fallbacks for mobile -->
+              <source
+                type="image/jpeg"
+                media="(max-width:1279px)"
+                srcset="images/mobile/25001-Illustrative-Plan.jpeg 640w"
+              />
+
+              <!-- Fallback image -->
+              <img
+                src="images/desktop/25001-Illustrative-Plan.jpeg"
+                alt="#"
+                class="!scale-[1.55] !object-[55%_75%] translate-x-2 -translate-y-2 w-full h-full object-cover"
+              />
+            </picture>
+          </figure>
+
+          <figure class="!m-0">
+            <picture class="w-full h-full block overflow-hidden">
+              <!-- WebP sources for desktop -->
+              <source
+                type="image/webp"
+                media="(min-width:1280px)"
+                srcset="
+                  images/desktop/25001-Section.webp 1920w,
+                  images/retina/25001-Section.webp  3840w
+                "
+              />
+              <!-- WebP sources for mobile -->
+              <source
+                type="image/webp"
+                media="(max-width:1279px)"
+                srcset="images/mobile/25001-Section.webp 640w"
+              />
+
+              <!-- JPEG fallbacks for desktop -->
+              <source
+                type="image/jpeg"
+                media="(min-width:1280px)"
+                srcset="
+                  images/desktop/25001-Section.jpeg 1920w,
+                  images/retina/25001-Section.jpeg  3840w
+                "
+              />
+              <!-- JPEG fallbacks for mobile -->
+              <source
+                type="image/jpeg"
+                media="(max-width:1279px)"
+                srcset="images/mobile/25001-Section.jpeg 640w"
+              />
+
+              <!-- Fallback image -->
+              <img
+                src="images/desktop/25001-Section.jpeg"
+                alt="#"
+                class="!scale-[2.85] translate-x-28 -translate-y-[4.95rem] w-full h-full object-cover"
+              />
+            </picture>
+          </figure>
+        </div>
+
+        <figure class="!m-0">
+          <picture class="services-images overflow-hidden !mt-0 !pt-0">
             <!-- WebP sources for desktop -->
             <source
               type="image/webp"
@@ -140,171 +319,100 @@
             <!-- Fallback image -->
             <img
               src="images/desktop/25001-Back-Deck.jpeg"
-              alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
-              class="!object-[50%_20%]"
-            />
-          </picture>
-        </figure>
-
-        <!-- Text section -->
-        <p class="mt-12 !font-medium">PROJECT TYPES</p>
-        <!-- Two-Column List -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-2 md:pl-12 mt-4 mb-8"
-        >
-          <!-- Left Column -->
-          <div class="flex flex-col">
-            <span>Residential</span>
-            <span>Parks + Open Spave</span>
-            <span>Civic + Public Realm</span>
-          </div>
-
-          <!-- Middle Column -->
-          <div class="flex flex-col">
-            <span>Education</span>
-            <span>Healthcare</span>
-            <span>Transportation + Infrastrucuture</span>
-          </div>
-
-          <!-- Right Column -->
-          <div class="flex flex-col">
-            <span>Airports</span>
-            <span>Adaptive Reuse</span>
-            <span>Lanscape on Structure</span>
-          </div>
-        </div>
-        <p>
-          DRIFT draws on more than two decades of professional experience
-          working independently and as part of multidisciplinary teams on
-          projects ranging from private residential landscapes to complex public
-          infrastructure.
-        </p>
-        <p class="mt-8 font-condensed">
-          <a href="#" class="!font-medium hover:underline">VIEW EXPERIENCE ></a>
-        </p>
-        <p class="mt-8">
-          <span class="!font-medium">PROCESS</span><br />01 — LISTEN<br />Site
-          conditions, project goals, site program, opportunities + constraints.
-        </p>
-        <p class="mt-4">
-          02 — EXPLORE<br />Ideas, spatial organization, materials, planting +
-          character.
-        </p>
-        <p class="mt-4">
-          03 — DEVELOP<br />Refine the preferred design and coordinate technical
-          requirements.
-        </p>
-        <p class="mt-4">
-          04 — DOCUMENT<br />Prepare drawings and specifi cations appropriate
-          for permitting, pricing + construction.
-        </p>
-        <p class="mt-4">
-          05 — IMPLEMENT<br />Assist with permitting, bidding, contractor
-          coordination + construction observation.
-        </p>
-
-        <figure>
-          <picture class="services-images overflow-hidden">
-            <!-- WebP sources for desktop -->
-            <source
-              type="image/webp"
-              media="(min-width:1280px)"
-              srcset="
-                images/desktop/MI-Site-Plan.webp 1920w,
-                images/retina/MI-Site-Plan.webp  3840w
-              "
-            />
-            <!-- WebP sources for mobile -->
-            <source
-              type="image/webp"
-              media="(max-width:1279px)"
-              srcset="images/mobile/MI-Site-Plan.webp 640w"
-            />
-
-            <!-- JPEG fallbacks for desktop -->
-            <source
-              type="image/jpeg"
-              media="(min-width:1280px)"
-              srcset="
-                images/desktop/MI-Site-Plan.jpeg 1920w,
-                images/retina/MI-Site-Plan.jpeg  3840w
-              "
-            />
-            <!-- JPEG fallbacks for mobile -->
-            <source
-              type="image/jpeg"
-              media="(max-width:1279px)"
-              srcset="images/mobile/MI-Site-Plan.jpeg 640w"
-            />
-
-            <!-- Fallback image -->
-            <img
-              src="images/desktop/MI-Site-Plan.jpeg"
               alt="Schematic drawing of the Michigan residence site plan"
-              class="!scale-[1.86] !object-[50%_75%]"
+              class="object-top"
             />
           </picture>
         </figure>
 
-        <figure>
-          <picture class="services-images overflow-hidden">
-            <!-- WebP sources for desktop -->
-            <source
-              type="image/webp"
-              media="(min-width:1280px)"
-              srcset="
-                images/desktop/MI-Residence1.webp 1920w,
-                images/retina/MI-Residence1.webp  3840w
-              "
-            />
-            <!-- WebP sources for mobile -->
-            <source
-              type="image/webp"
-              media="(max-width:1279px)"
-              srcset="images/mobile/MI-Residence1.webp 640w"
-            />
+        <p class="mt-12 project-text !font-medium !text-base">OUR PROCESS</p>
 
-            <!-- JPEG fallbacks for desktop -->
-            <source
-              type="image/jpeg"
-              media="(min-width:1280px)"
-              srcset="
-                images/desktop/MI-Residence1.jpeg 1920w,
-                images/retina/MI-Residence1.jpeg  3840w
-              "
-            />
-            <!-- JPEG fallbacks for mobile -->
-            <source
-              type="image/jpeg"
-              media="(max-width:1279px)"
-              srcset="images/mobile/MI-Residence1.jpeg 640w"
-            />
+        <ol class="divide-y divide-[#c4c4c4]">
+          <li class="grid grid-cols-[3rem_1fr] items-baseline py-5">
+            <span class="text-sm font-medium text-neutral-500">01</span>
+            <div>
+              <p class="text-[18pt] font-sans font-medium tracking-tight mb-3">
+                Listen.
+              </p>
+              <p class="project-text !text-sm">
+                Understand the people, the place, and the ambitions for the
+                project. Identify opportunities, constraints, and priorities.
+              </p>
+            </div>
+          </li>
 
-            <!-- Fallback image -->
-            <img
-              src="images/desktop/MI-Residence1.jpeg"
-              alt="Schematic drawing of the Michigan residence site plan"
-              class="!scale-[1.86] !object-[50%_75%]"
-            />
-          </picture>
-        </figure>
-        <p class="mt-12 !font-medium">EVERY PROJECT IS DIFFERENT</p>
-        <p>
+          <li class="grid grid-cols-[3rem_1fr] items-baseline py-5">
+            <span class="text-sm font-medium text-neutral-500">02</span>
+            <div>
+              <p class="text-[18pt] font-sans font-medium tracking-tight mb-3">
+                Explore.
+              </p>
+              <p class="project-text !text-sm">
+                Investigate possibilities through spatial studies, design
+                concepts, materials, planting, and visualization.
+              </p>
+            </div>
+          </li>
+
+          <li class="grid grid-cols-[3rem_1fr] items-baseline py-5">
+            <span class="text-sm font-medium text-neutral-500">03</span>
+            <div>
+              <p class="text-[18pt] font-sans font-medium tracking-tight mb-3">
+                Refine.
+              </p>
+              <p class="project-text !text-sm">
+                Develop the preferred design, resolving spatial, material,
+                technical, and budget considerations.
+              </p>
+            </div>
+          </li>
+
+          <li class="grid grid-cols-[3rem_1fr] items-baseline py-5">
+            <span class="text-sm font-medium text-neutral-500">04</span>
+            <div>
+              <p class="text-[18pt] font-sans font-medium tracking-tight mb-3">
+                Detail.
+              </p>
+              <p class="project-text !text-sm">
+                Translate the design into drawings and specifications for
+                permitting, pricing, and construction.
+              </p>
+            </div>
+          </li>
+
+          <li class="grid grid-cols-[3rem_1fr] items-baseline py-5">
+            <span class="text-sm font-medium text-neutral-500">05</span>
+            <div>
+              <p class="text-[18pt] font-sans font-medium tracking-tight mb-3">
+                Realize.
+              </p>
+              <p class="project-text !text-sm">
+                Collaborate with owners, consultants, and contractors to help
+                carry the design through construction.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="font-sans font-medium text-[18pt] leading-tight mt-16">
+          Every project is different.
+        </p>
+        <p class="project-text !text-sm mt-3">
           The appropriate scope depends on the site, project complexity,
-          jurisdiction and desired level of involvement. DRIFT develops a
+          jurisdiction, and desired level of involvement. DRIFT develops a
           project-specifi c scope following an initial conversation and review
           of available site information.
         </p>
-        <p class="mt-4">
+        <p class="project-text !text-sm mt-3">
           Projects may also require surveyors, arborists, architects, engineers,
           or other specialists. DRIFT can help identify these needs and
           coordinate with the broader project team.
         </p>
-        <p class="mt-8 !font-medium">FEES</p>
-        <p>
-          Fees are developed based on project scale, complexity, schedule and
-          scope of services. Depending on the project, services may be provided
-          on a fixed-fee, hourly or phased basis.
+        <p class="project-text !text-sm mt-6 mb-16">
+          <span class="font-medium">FEES</span><br />Fees are developed based on
+          project scale, complexity, schedule and scope of services. Depending
+          on the project, services may be provided on a fi xed-fee, hourly or
+          phased basis.
         </p>
       </div>
     </main>

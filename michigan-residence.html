@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://www.drift-la.com/images/retina/MI-Residence3.jpeg"
+    />
+    <title>Michigan Residence — DRIFT</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" type="image/png" href="images/DRIFTfavicon.png" />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Projects Page Header -->
+    <header class="projects-header inset-x-0 top-0 md:pl-12">
+      <h1>
+        <a href="index.html" class="site-logo">
+          <img
+            src="/images/DRIFT-logo-black.svg"
+            alt="DRIFT logo"
+            class="block h-10 sm:w-[12.5vw] sm:h-auto ml-4 sm:ml-0"
+          />
+        </a>
+      </h1>
+
+      <nav class="projects-nav">
+        <a href="projects.html" class="!text-black">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="#">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- hamburger button -->
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open main menu"
+        class="md:hidden p-2 mr-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white text-black"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <!-- mobile nav -->
+      <nav
+        id="mobile-menu"
+        aria-labelledby="mobile-menu-btn"
+        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+      >
+        <div class="space-y-4 p-4">
+          <a href="projects.html" class="block hover:underline">Projects</a>
+          <a href="services.html" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">Experience</a>
+          <a href="about.html" class="block hover:underline">About</a>
+          <a href="contact.html" class="block hover:underline">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Container -->
+    <main class="project-container">
+      <!-- Hero Image -->
+      <figure class="project-hero aspect-[3/2]">
+        <picture>
+          <!-- WebP sources for desktop -->
+          <source
+            type="image/webp"
+            media="(min-width:1280px)"
+            srcset="
+              images/desktop/MI-Residence1.webp 1920w,
+              images/retina/MI-Residence1.webp  3840w
+            "
+          />
+          <!-- WebP sources for mobile -->
+          <source
+            type="image/webp"
+            media="(max-width:1279px)"
+            srcset="images/mobile/MI-Residence1.webp 640w"
+          />
+
+          <!-- JPEG fallbacks for desktop -->
+          <source
+            type="image/jpeg"
+            media="(min-width:1280px)"
+            srcset="
+              images/desktop/MI-Residence1.jpeg 1920w,
+              images/retina/MI-Residence1.jpeg  3840w
+            "
+          />
+          <!-- JPEG fallbacks for mobile -->
+          <source
+            type="image/jpeg"
+            media="(max-width:1279px)"
+            srcset="images/mobile/MI-Residence1.jpeg 640w"
+          />
+
+          <!-- Fallback image -->
+          <img
+            src="images/mobile/MI-Residence1.jpeg"
+            alt="Michigan Residence landscape detail with fire pit and chairs"
+            class="absolute inset-0 w-full h-full object-cover object-[50%_49%] xl:object-[50%_49%]"
+          />
+        </picture>
+      </figure>
+
+      <!-- Caption -->
+      <div class="space-y-1 sm:space-y-3">
+        <div class="project-header">
+          <h1 class="project-title">Michigan Residence</h1>
+        </div>
+        <div class="project-text">
+          Set within a clearing in a mature maple-beech forest, this Michigan
+          residence is organized around a central courtyard shared by a
+          collection of connected buildings. The landscape draws on a French
+          Country vocabulary of gravel, stone, clipped forms, flowering borders,
+          and a traditional fountain, creating a composed garden core with
+          direct visual and physical connections to the surrounding woodland.
+        </div>
+        <div class="project-text">
+          Rather than treating the courtyard as a formal set piece, the design
+          balances structure with looseness. Strong axial relationships and
+          defined edges are softened by layered planting, shifting textures, and
+          informal garden rooms, allowing the landscape to move gradually from
+          cultivated enclosure to the wooded perimeter.
+        </div>
+        <div class="project-specs">
+          Location: <span class="font-light">Lakeside, MI</span>
+          <br />
+          Collaborators: <span class="font-light">John Banks Architects</span>
+          <br />
+          Status: <span class="font-light">Completed 2017</span>
+        </div>
+      </div>
+
+      <div class="project-images">
+        <!-- Image 2 -->
+        <picture>
+          <!-- desktop crop: 1× for regular DPR, 2× for Retina -->
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Residence5.webp 1x,
+              images/retina/MI-Residence5.webp  2x
+            "
+          />
+
+          <!-- mobile crop: same density swap -->
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Residence5.webp 1x,
+              images/mobile/MI-Residence5.webp 2x
+            "
+          />
+
+          <!-- ultimate fallback -->
+          <img
+            src="images/desktop/MI-Residence5.jpeg"
+            alt="Detail of front door and plantings at Michigan residence"
+            class="w-full h-auto block"
+            loading="lazy"
+            srcset="
+              images/desktop/MI-Residence5.jpeg 1x,
+              images/retina/MI-Residence5.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 3 -->
+        <picture>
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Residence3.webp 1x,
+              images/retina/MI-Residence3.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Residence3.webp 1x,
+              images/mobile/MI-Residence3.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/MI-Residence3.jpeg"
+            alt="Detail of courtyard and plantings at Michigan residence"
+            class="w-full h-auto block"
+            loading="lazy"
+            srcset="
+              images/desktop/MI-Residence3.jpeg 1x,
+              images/retina/MI-Residence3.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 4 -->
+        <picture class="overflow-hidden">
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Residence2.webp 1x,
+              images/retina/MI-Residence2.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Residence2.webp 1x,
+              images/mobile/MI-Residence2.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/MI-Residence2.jpeg"
+            alt="Door and fountain detail at Michigan residence"
+            class="!scale-x-[1.2] !-translate-x-[5%]"
+            loading="lazy"
+            srcset="
+              images/desktop/MI-Residence2.jpeg 1x,
+              images/retina/MI-Residence2.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 5 -->
+        <picture>
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Residence4.webp 1x,
+              images/retina/MI-Residence4.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Residence4.webp 1x,
+              images/mobile/MI-Residence4.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/MI-Residence4.jpeg"
+            alt="Courtyard and fountain detail at Michigan residence"
+            class="w-full h-auto block"
+            loading="lazy"
+            srcset="
+              images/desktop/MI-Residence4.jpeg 1x,
+              images/retina/MI-Residence4.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 6 -->
+        <picture class="overflow-hidden">
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Residence-6.webp 1x,
+              images/retina/MI-Residence-6.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Residence-6.webp 1x,
+              images/mobile/MI-Residence-6.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/MI-Residence-6.jpeg"
+            alt="Child exiting front gate to the driveway"
+            loading="lazy"
+            class="!scale-[1.03] !translate-x-[2%]"
+            srcset="
+              images/desktop/MI-Residence-6.jpeg 1x,
+              images/retina/MI-Residence-6.jpeg  2x
+            "
+          />
+        </picture>
+
+        <!-- Image 7 -->
+        <picture>
+          <source
+            media="(min-width:641px)"
+            srcset="
+              images/desktop/MI-Site-Plan.webp 1x,
+              images/retina/MI-Site-Plan.webp  2x
+            "
+          />
+
+          <source
+            media="(max-width:640px)"
+            srcset="
+              images/mobile/MI-Site-Plan.webp 1x,
+              images/mobile/MI-Site-Plan.webp 2x
+            "
+          />
+
+          <img
+            src="images/desktop/MI-Site-Plan.jpeg"
+            alt="aerial view of the Michigan residence site plan"
+            class="!object-[50%_30%]"
+            loading="lazy"
+            srcset="
+              images/desktop/MI-Site-Plan.jpeg 1x,
+              images/retina/MI-Site-Plan.jpeg  2x
+            "
+          />
+        </picture>
+      </div>
+    </main>
+
+    <footer class="site-footer inset-x-0 bottom-0" role="contentinfo">
+      © 2025 DRIFT Landscape Architecture, LLC
+      <br class="sm:hidden" />
+      <span class="hidden sm:inline"> | </span>
+      Portland, OR | 503.928.3702 | tim@drift-la.com
+    </footer>
+
+    <script>
+      // MOBILE MENU TOGGLE
+      const mobileBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // ensure initial aria state
+      mobileBtn.setAttribute("aria-expanded", "false");
+      mobileBtn.addEventListener("click", () => {
+        // toggle visibility
+        const isOpen = !mobileMenu.classList.toggle("hidden");
+        // update aria-expanded for a11y
+        mobileBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+    </script>
+  </body>
+</html>

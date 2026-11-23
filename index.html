@@ -80,15 +80,40 @@
         <div class="slideshow absolute inset-0">
           <!-- prettier-ignore -->
           <picture class="fade-image image-1">
+            <!-- 1) WebP sources -->
             <source
-              media="(min-width:641px)"
+              type="image/webp"
+              media="(min-width:1280px)"
               srcset="
-                images/desktop/hero-MI-residence.jpeg 1x, images/retina/hero-MI-residence.jpeg 2x
+                images/desktop/hero-MI-residence.webp 1920w,
+                images/retina/hero-MI-residence.webp  3840w
               "
             />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-MI-residence.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/hero-MI-residence.jpeg 1920w,
+                images/retina/hero-MI-residence.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-MI-residence.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
             <img
-              src="images/desktop/hero-MI-residence.jpeg"
-              alt="Private residence in Michigan"
+              src="images/mobile/hero-MI-residence.jpeg"
+              alt="#"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -96,31 +121,80 @@
 
           <!-- prettier-ignore -->
           <picture class="fade-image image-2">
+            <!-- 1) WebP sources -->
             <source
-              media="(min-width:641px)"
+              type="image/webp"
+              media="(min-width:1280px)"
               srcset="
-                images/desktop/hero-25001-Back-Deck.jpeg 1x, images/retina/hero-25001-Back-Deck.jpeg 2x
+                images/desktop/hero-25001-Back-Deck.webp 1920w,
+                images/retina/hero-25001-Back-Deck.webp  3840w
               "
             />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-25001-Back-Deck.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/hero-25001-Back-Deck.jpeg 1920w,
+                images/retina/hero-25001-Back-Deck.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-25001-Back-Deck.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
             <img
-              src="images/desktop/hero-25001-Back-Deck.jpeg"
-              alt="Cascade Avenue streetscape in Sisters, Oregon"
+              src="images/mobile/hero-25001-Back-Deck.jpeg"
+              alt="#"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </picture>
 
-          <!-- prettier-ignore -->
           <picture class="fade-image image-3">
+            <!-- 1) WebP sources -->
             <source
-              media="(min-width:641px)"
+              type="image/webp"
+              media="(min-width:1280px)"
               srcset="
-                images/desktop/hero-wood.jpeg 1x, images/retina/hero-wood.jpeg 2x
+                images/desktop/26005-Garden-TEMP.webp 1920w,
+                images/retina/26005-Garden-TEMP.webp  3840w
               "
             />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/26005-Garden-TEMP.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/26005-Garden-TEMP.jpeg 1920w,
+                images/retina/26005-Garden-TEMP.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/26005-Garden-TEMP.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
             <img
-              src="images/desktop/hero-wood.jpeg"
-              alt="Cascade Avenue streetscape in Sisters, Oregon"
+              src="images/mobile/26005-Garden-TEMP.jpeg"
+              alt="#"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -128,15 +202,40 @@
 
           <!-- prettier-ignore -->
           <picture class="fade-image image-4">
+            <!-- 1) WebP sources -->
             <source
-              media="(min-width:641px)"
+              type="image/webp"
+              media="(min-width:1280px)"
               srcset="
-                images/desktop/hero-26002-Frontage.jpeg 1x, images/retina/hero-26002-Frontage.jpeg 2x
+                images/desktop/hero-26002-Frontage.webp 1920w,
+                images/retina/hero-26002-Frontage.webp  3840w
               "
             />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-26002-Frontage.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/hero-26002-Frontage.jpeg 1920w,
+                images/retina/hero-26002-Frontage.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-26002-Frontage.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
             <img
-              src="images/desktop/hero-26002-Frontage.jpeg"
-              alt="Cascade Avenue streetscape in Sisters, Oregon"
+              src="images/mobile/hero-26002-Frontage.jpeg"
+              alt="#"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -144,15 +243,40 @@
 
           <!-- prettier-ignore -->
           <picture class="fade-image image-5">
+            <!-- 1) WebP sources -->
             <source
-              media="(min-width:641px)"
+              type="image/webp"
+              media="(min-width:1280px)"
               srcset="
-                images/desktop/hero-25001-Veggie-Garden.jpeg 1x, images/retina/hero-25001-Veggie-Garden.jpeg 2x
+                images/desktop/hero-25001-Veggie-Garden.webp 1920w,
+                images/retina/hero-25001-Veggie-Garden.webp  3840w
               "
             />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-25001-Veggie-Garden.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/hero-25001-Veggie-Garden.jpeg 1920w,
+                images/retina/hero-25001-Veggie-Garden.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/hero-25001-Veggie-Garden.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
             <img
-              src="images/desktop/hero-25001-Veggie-Garden.jpeg"
-              alt="Cascade Avenue streetscape in Sisters, Oregon"
+              src="images/mobile/hero-25001-Veggie-Garden.jpeg"
+              alt="#"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -160,80 +284,6 @@
 
           <div class="bottom-fade inset-x-0 bottom-0"></div>
         </div>
-        <!-- Project links -->
-        <!-- <a
-          href="01-PSU-karl-miller-center.html"
-          class="project-link show bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Karl Miller Center</a
-        >
-        <a
-          href="02-mill-park-portland-or.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Mill Park</a
-        >
-        <a
-          href="16-portland-city-hall-green-roof.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Portland City Hall Green Roof</a
-        >
-        <a
-          href="09-OHSU-vista-pavilion.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Vista Pavilion</a
-        > -->
-        <!-- <a
-          href="06-private-residence-michigan.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Michigan Residence</a
-        >
-        <a
-          href="05-cascade-ave-streetscape-sisters.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Cascade Avenue Streetscape</a -->
-        >
-        <!-- <a
-          href="15-kinetic-delight-portland-winter-light-festival.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Kinetic Delight</a
-        >
-        <a
-          href="10-legacy-oregon-burn-center-garden.html"
-          class="project-link hide bottom-4 right-4 sm:bottom-6 sm:right-12"
-          >Legacy Oregon Burn Center Garden</a
-        > -->
-
-        <!-- Image credits -->
-        <!-- <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: Mayer/Reed</span
-        >
-        <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: Mayer/Reed</span
-        >
-        <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: Mayer/Reed</span
-        >
-        <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: NBBJ and MOTIV</span
-        > -->
-        <!-- <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-        ></span>
-        <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: GreenWorks</span
-        > -->
-        <!-- <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: Mayer/Reed</span
-        >
-        <span
-          class="credit fade-credit hide bottom-4 left-4 sm:bottom-6 sm:left-10 text-xs sm:text-sm"
-          >Image Credit: Mayer/Reed</span
-        > -->
       </section>
 
       <!-- MOBILE hero slide stack -->
@@ -265,14 +315,14 @@
             </picture>
 
             <!-- Project name -->
-            <span
+            <!-- <span
               class="absolute top-2 left-3 z-10 text-gray-300 font-sans font-bold text-sm"
               >Michigan Residence</span
-            >
+            > -->
             <!-- Credit -->
-            <span
+            <!-- <span
               class="absolute bottom-2 right-3 z-10 text-gray-300 font-sans text-[0.625rem]"
-            ></span>
+            ></span> -->
 
             <!-- Gradients -->
             <div class="fade-top"></div>

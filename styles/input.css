@@ -139,6 +139,11 @@
     @apply absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent;
   }
 
+  /* gradient at the top of the services.html hero */
+  .fade-top-services {
+    @apply absolute inset-x-0 top-0 z-10 h-[40dvh] bg-gradient-to-b from-black/50 to-transparent;
+  }
+
   /* Your title already, now also reveals when card is “active” */
   /* .projects-titles {
     @apply block w-[75%] text-center
@@ -157,7 +162,7 @@
        md:flex-col md:items-start md:justify-start
        px-4 sm:px-6 lg:px-8
        h-14 w-full
-       md:h-screen md:w-1/3 md:pt-6
+       md:h-screen md:w-1/3 md:pt-10
        bg-white
        font-sans font-medium;
   }
@@ -168,7 +173,7 @@
     @apply hidden
            md:flex md:flex-col
            self-start w-full
-           mt-4 space-y-2
+           mt-4 space-y-[0.375em]
            font-light text-sm lg:text-[16pt];
   }
   /* Grey nav links that go black+underline on hover/active */
@@ -206,7 +211,7 @@
 
   /* PROJECT PAGES classes */
   .project-container {
-    @apply pt-10 sm:pt-[92px] pb-4 sm:pb-[0.25in] px-6 sm:px-[0.375in] w-full md:pr-12 md:pl-[37.5%];
+    @apply pt-14 sm:pt-[108px] pb-4 sm:pb-[0.25in] px-6 sm:px-[0.375in] w-full md:pr-12 md:pl-[33.333%];
   }
   .project-hero {
     @apply relative w-full h-auto overflow-hidden mb-[0.275in];
@@ -268,11 +273,25 @@
     @apply block w-full aspect-[19/10] object-cover; /* 16:9 */
   }
 
+  .project-images picture {
+    @apply block overflow-hidden;
+  }
+
   .services-images {
     @apply grid
            grid-cols-1        /* 1 col on mobile */
            mt-[0.5in] /* 1/2″ gap above this section */
            mb-[0.25in]; /* 1/4″ gap below this section */
+  }
+
+  .services-hero {
+    @apply grid
+         grid-cols-1
+         overflow-hidden;
+  }
+
+  .services-hero img {
+    @apply block w-full aspect-[3/2] object-cover;
   }
 
   .services-images img {

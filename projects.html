@@ -77,7 +77,9 @@
     </header>
 
     <!-- Main grid of thumbnails -->
-    <main class="pt-20 sm:pt-[92px] md:pl-[37.5%] pb-6 sm:pb-12 px-6 w-full">
+    <main
+      class="pt-24 sm:pt-[108px] md:pl-[33.333%] w-full pb-6 sm:pb-12 pl-6 pr-4 sm:pr-6 md:pr-12"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Project 1 -->
         <a
@@ -132,7 +134,10 @@
         </a>
 
         <!-- Project 2 -->
-        <a href="#" class="block relative aspect-video overflow-hidden group">
+        <a
+          href="concordia-residence.html"
+          class="block relative aspect-video overflow-hidden group"
+        >
           <picture>
             <!-- 1) WebP sources -->
             <source
@@ -181,7 +186,10 @@
         </a>
 
         <!-- Project 3 -->
-        <a href="#" class="block relative aspect-video overflow-hidden group">
+        <a
+          href="clackamas-stabilization-center.html"
+          class="block relative aspect-video overflow-hidden group"
+        >
           <picture>
             <!-- 1) WebP sources -->
             <source
@@ -233,7 +241,7 @@
 
         <!-- Project 4 -->
         <a
-          href="06-private-residence-michigan.html"
+          href="michigan-residence.html"
           class="block relative aspect-video overflow-hidden group"
         >
           <picture>
@@ -335,8 +343,57 @@
           </div>
         </a>
 
-        <!-- Placeholder 2 -->
-        <div class="block relative aspect-video bg-gray-200"></div>
+        <!-- Project 6 -->
+        <a
+          href="bryant-woods-residence.html"
+          class="block relative aspect-video overflow-hidden group"
+        >
+          <picture>
+            <!-- 1) WebP sources -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/26005-Garden-TEMP.webp 1920w,
+                images/retina/26005-Garden-TEMP.webp  3840w
+              "
+            />
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/26005-Garden-TEMP.webp 640w"
+            />
+
+            <!-- 2) JPEG fallbacks -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/26005-Garden-TEMP.jpeg 1920w,
+                images/retina/26005-Garden-TEMP.jpeg  3840w
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/26005-Garden-TEMP.jpeg 640w"
+            />
+
+            <!-- 3) Ultimate fallback -->
+            <img
+              src="images/mobile/26005-Garden-TEMP.jpeg"
+              alt="Thumbnail of a private residence in Michigan"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </picture>
+
+          <!-- overlay + title -->
+          <div
+            class="project-overlay absolute inset-0 bg-white bg-opacity-0 group-hover:bg-opacity-75 flex items-center justify-center transition duration-300"
+          >
+            <span class="projects-titles"> Bryant Woods Residence </span>
+          </div>
+        </a>
       </div>
     </main>
 
