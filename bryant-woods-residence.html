@@ -60,7 +60,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -75,7 +75,7 @@
     <!-- Content Container -->
     <main class="project-container">
       <!-- Hero Image -->
-      <figure class="project-hero aspect-[3/2]">
+      <figure class="hero-media">
         <picture>
           <!-- WebP sources for desktop -->
           <source
@@ -119,30 +119,30 @@
       </figure>
 
       <!-- Caption -->
-      <div class="space-y-1 sm:space-y-3">
+      <div class="space-y-4">
         <div class="project-header">
           <h1 class="project-title">Bryant Woods Residence</h1>
         </div>
         <div class="project-text">
           Mature Oregon white oaks, towering Douglas-fi rs, and massive glacial
           erratics give this otherwise sparsely landscaped property its
-          distinctive character. Inspired by the owners’ aﬃ nity for intimate,
-          richly planted gardens, the design introduces interconnected spaces
-          with meandering paths and small seating areas nestled within lush
-          vegetation. Beige pavers and basalt fl agstone offer a contemporary
-          interpretation of traditional garden pathways, while basalt walls
-          complement the site’s ancient boulders. Cedar fencing, arbors, and
-          vine-covered screens weave through the garden, providing warmth,
-          privacy, and enclosure.
+          distinctive character. Inspired by the owners&apos; affinity for
+          intimate, richly planted gardens, the design introduces interconnected
+          spaces with meandering paths and small seating areas nestled within
+          lush vegetation. Beige pavers and basalt flagstone offer a
+          contemporary interpretation of traditional garden pathways, while
+          basalt walls complement the site&apos;s ancient boulders. Cedar
+          fencing, arbors, and vine-covered screens weave through the garden,
+          providing warmth, privacy, and enclosure.
         </div>
         <div class="project-text">
           The backyard is devoted largely to cultivation and habitat. Curved
           wood planters anchor a generous edible garden full of vegetables,
           herbs, berries, and fruit trees, while an extensive pollinator garden
           bolsters this productive landscape. Douglas-fi r forest understory and
-          Oregon white oak shrubland plantings build upon the property’s mature
-          woodland character, bringing greater richness and biodiversity to the
-          site.
+          Oregon white oak shrubland plantings build upon the property&apos;s
+          mature woodland character, bringing greater richness and biodiversity
+          to the site.
         </div>
         <div class="project-specs">
           Location: <span class="font-light">Lake Oswego, OR</span>
@@ -156,7 +156,7 @@
       <!-- Image container -->
       <div class="project-images">
         <!-- Image 2 -->
-        <picture class="overflow-hidden">
+        <picture>
           <!-- desktop crop: 1× for regular DPR, 2× for Retina -->
           <source
             media="(min-width:641px)"
@@ -207,7 +207,7 @@
           />
 
           <img
-            src="images/desktop/ 26005-Concept-Plan.jpeg"
+            src="images/desktop/26005-Concept-Plan.jpeg"
             alt="#"
             loading="lazy"
             class="scale-[1.19] translate-y-2 -translate-x-2"
@@ -220,7 +220,7 @@
 
         <!-- Image 4 -->
         <div class="relative">
-          <picture class="overflow-hidden">
+          <picture>
             <source
               media="(min-width:641px)"
               srcset="
@@ -262,19 +262,7 @@
       Portland, OR | 503.928.3702 | tim@drift-la.com
     </footer>
 
-    <script>
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      // ensure initial aria state
-      mobileBtn.setAttribute("aria-expanded", "false");
-      mobileBtn.addEventListener("click", () => {
-        // toggle visibility
-        const isOpen = !mobileMenu.classList.toggle("hidden");
-        // update aria-expanded for a11y
-        mobileBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

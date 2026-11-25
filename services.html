@@ -59,7 +59,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -70,11 +70,13 @@
         </div>
       </nav>
     </header>
+
+    <!-- Main Content -->
     <main class="project-container">
       <div class="mb-8">
         <!-- Hero Image -->
-        <figure class="relative mb-[0.25in]">
-          <picture class="services-hero">
+        <figure class="hero-media">
+          <picture>
             <!-- WebP sources for desktop -->
             <source
               type="image/webp"
@@ -124,9 +126,9 @@
 
         <p class="font-sans font-light text-[18pt] leading-tight">
           DRIFT provides landscape architectural design and planning for private
-          and<br />public environments, working across scales and complexities,
-          from the earliest explorations of a site&apos;s potential to the
-          creation of meaningful, lasting places.
+          and public environments, working across scales and complexities, from
+          the earliest explorations of a site&apos;s potential to the creation
+          of meaningful, lasting places.
         </p>
         <p class="font-sans font-medium text-[18pt] leading-tight mt-10">
           What we do.
@@ -189,9 +191,8 @@
           </div>
         </div>
 
-        <!-- Text section -->
         <p class="project-text !font-medium !text-base mb-12">
-          VIEW EXPERIENCE >
+          <a href="#" class="!font-medium hover:underline">VIEW EXPERIENCE ></a>
         </p>
 
         <div class="grid grid-cols-2 gap-4 aspect-[24/10] !mb-4">
@@ -423,5 +424,8 @@
       <span class="hidden sm:inline"> | </span>
       Portland, OR | 503.928.3702| tim@drift-la.com
     </footer>
+
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

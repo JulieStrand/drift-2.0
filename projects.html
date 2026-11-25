@@ -64,21 +64,21 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
-          <a href="projects.html">Projects</a>
-          <a href="services.html">Services</a>
-          <a href="#">Experience</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="projects.html" class="block hover:underline">Projects</a>
+          <a href="services.html" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">Experience</a>
+          <a href="about.html" class="block hover:underline">About</a>
+          <a href="contact.html" class="block hover:underline">Contact</a>
         </div>
       </nav>
     </header>
 
     <!-- Main grid of thumbnails -->
     <main
-      class="pt-24 sm:pt-[108px] md:pl-[33.333%] w-full pb-6 sm:pb-12 pl-6 pr-4 sm:pr-6 md:pr-12"
+      class="pt-28 md:pt-[108px] md:pl-[33.333%] w-full pb-6 sm:pb-12 px-6 sm:px-[0.375in] md:pr-12"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Project 1 -->
@@ -404,17 +404,11 @@
       Portland, OR | 503.928.3702 | tim@drift-la.com
     </footer>
 
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // --- MOBILE MENU TOGGLE ---
-        const mobileBtn = document.getElementById("mobile-menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        mobileBtn.addEventListener("click", () => {
-          const isOpen = mobileMenu.classList.toggle("hidden");
-          mobileBtn.setAttribute("aria-expanded", String(!isOpen));
-        });
-
         // --- TOUCH-HOVER EFFECT FOR MOBILE ONLY ---
         // This checks if the device is touch-capable.
         const isTouchDevice =
@@ -463,5 +457,7 @@
         }
       });
     </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

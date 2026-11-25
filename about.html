@@ -59,7 +59,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -71,248 +71,159 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="project-container">
-      <div class="space-y-4 project-text">
-        <p class="!font-medium">ABOUT</p>
-        <p>
-          DRIFT is a landscape architecture studio based in Portland, Oregon,
-          founded by landscape architect Tim Strand. The practice works across
-          scales and project types, from private residential landscapes to
-          parks, campuses, civic spaces and complex public infrastructure.
-        </p>
-      </div>
-
-      <!-- Hero Image -->
-      <figure class="about-hero">
-        <picture>
-          <!-- WebP sources for desktop -->
-          <source
-            type="image/webp"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.webp 1920w,
-              images/retina/AboutImage.webp  3840w
-            "
-          />
-          <!-- WebP sources for mobile -->
-          <source
-            type="image/webp"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.webp 640w"
-          />
-
-          <!-- JPEG fallbacks for desktop -->
-          <source
-            type="image/jpeg"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.jpeg 1920w,
-              images/retina/AboutImage.jpeg  3840w
-            "
-          />
-          <!-- JPEG fallbacks for mobile -->
-          <source
-            type="image/jpeg"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.jpeg 640w"
-          />
-
-          <!-- Fallback image -->
-          <img
-            src="images/desktop/AboutImage.jpeg"
-            alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
-            class="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        </picture>
-      </figure>
-
-      <div class="space-y-4 project-text">
-        <p class="!font-medium">APPROACH</p>
-        <p>
-          DRIFT approaches landscape as an integral part of architecture and
-          place—not as something applied after the fact. The landscape can
-          ground a building, connect it to its surroundings, and create
-          experiences architecture cannot provide on its own.
-        </p>
-        <p>
-          The work favors restraint, clarity and carefully considered detail.
-          Simple gestures can be powerful. Unexpected ones can invite attention,
-          curiosity and refl ection.
-        </p>
-        <p>
-          Planting brings another dimension: movement, fragrance, texture,
-          seasonal change and time. Rather than relying on familiar formulas,
-          DRIFT seeks plant communities that respond to climate and context
-          while expanding expectations of what a Pacific Northwest landscape can
-          be.
-        </p>
-      </div>
-
-      <!-- Hero Image -->
-      <figure class="about-hero">
-        <picture>
-          <!-- WebP sources for desktop -->
-          <source
-            type="image/webp"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.webp 1920w,
-              images/retina/AboutImage.webp  3840w
-            "
-          />
-          <!-- WebP sources for mobile -->
-          <source
-            type="image/webp"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.webp 640w"
-          />
-
-          <!-- JPEG fallbacks for desktop -->
-          <source
-            type="image/jpeg"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.jpeg 1920w,
-              images/retina/AboutImage.jpeg  3840w
-            "
-          />
-          <!-- JPEG fallbacks for mobile -->
-          <source
-            type="image/jpeg"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.jpeg 640w"
-          />
-
-          <!-- Fallback image -->
-          <img
-            src="images/desktop/AboutImage.jpeg"
-            alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
-            class="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        </picture>
-      </figure>
-
-      <div class="space-y-4 project-text">
-        <p class="!font-medium">CHANGE</p>
-        <p>
-          Landscape is never finished. Plants mature and migrate. Materials
-          weather. Seasons transform a place. People use spaces in ways that
-          can&apos;t always be anticipated
-        </p>
-        <p>
-          Design establishes a framework for that change—balancing intention and
-          control with the understanding that landscapes will continue evolving
-          long after they are built.
-        </p>
-        <p class="!font-medium pt-4">LANDSCAPE + PEOPLE</p>
-        <p>
-          Landscape can offer refuge, restoration, connection and delight—from a
-          private garden shared with family and friends to a park, campus,
-          healthcare environment or civic space. These experiences can soften
-          the ordinary diﬃ culties of daily life and provide moments of respite
-          during much more profound ones.
-        </p>
-        <p>
-          In the public realm, landscape architecture carries an additional
-          responsibility to expand access to nature, beauty and meaningful open
-          space. Thoughtful design should welcome people with different
-          backgrounds, abilities and experiences and contribute positively to
-          the communities it serves.
-        </p>
-      </div>
-
-      <!-- Hero Image -->
-      <figure class="about-hero">
-        <picture>
-          <!-- WebP sources for desktop -->
-          <source
-            type="image/webp"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.webp 1920w,
-              images/retina/AboutImage.webp  3840w
-            "
-          />
-          <!-- WebP sources for mobile -->
-          <source
-            type="image/webp"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.webp 640w"
-          />
-
-          <!-- JPEG fallbacks for desktop -->
-          <source
-            type="image/jpeg"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/AboutImage.jpeg 1920w,
-              images/retina/AboutImage.jpeg  3840w
-            "
-          />
-          <!-- JPEG fallbacks for mobile -->
-          <source
-            type="image/jpeg"
-            media="(max-width:1279px)"
-            srcset="images/mobile/AboutImage.jpeg 640w"
-          />
-
-          <!-- Fallback image -->
-          <img
-            src="images/desktop/AboutImage.jpeg"
-            alt="Person sitting on a bench in a landscaped urban plaza with trees, grasses, and shrubs."
-            class="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        </picture>
-      </figure>
-
-      <!-- STUDIO Section -->
-      <div class="project-text mt-12">
-        <p class="!font-medium mb-4">STUDIO</p>
-
-        <!-- Flex container for side-by-side layout -->
-        <div
-          class="flex flex-col md:flex-row gap-8 items-start overflow-hidden"
-        >
-          <!-- Left Column: Image -->
-          <div class="w-full md:w-[28%] shrink-0">
-            <img
-              src="images/desktop/Headshot-Color-WEB.jpeg"
-              alt="Tim Strand"
-              class="w-full aspect-[6/5] object-cover object-[28%_center]"
+      <div class="mb-8">
+        <!-- Hero Image -->
+        <figure class="hero-media">
+          <picture>
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/AboutImage.webp 1920w,
+                images/retina/AboutImage.webp  3840w
+              "
             />
-          </div>
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/AboutImage.webp 640w"
+            />
 
-          <!-- Right Column: Text -->
-          <div class="w-full md:w-[72%] space-y-4 project-text">
-            <p>
-              <span class="font-medium">Tim Strand, PLA, ASLA</span><br />
-              Principal + Owner
-            </p>
-            <p>
-              Tim Strand founded DRIFT after more than two decades of
-              professional landscape architecture practice in Portland and the
-              Bay Area. His experience ranges from residential landscapes and
-              parks to higher education, healthcare, airports, transportation +
-              infrastructure, adaptive reuse and landscape on structure.
-            </p>
-            <p>
-              Tim holds a Master of Landscape Architecture from the University
-              of California, Berkeley and a B.S. in Natural Resources and
-              Environment from the University of Michigan. He is a registered
-              landscape architect in Oregon.
-            </p>
-            <p>
-              DRIFT is a COBID-certified Emerging Small Business (ESB #15972)
-              and holds professional licensure in the State of Oregon, with
-              reciprocity available in additional states.
-            </p>
-          </div>
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/AboutImage.jpeg 1920w,
+                images/retina/AboutImage.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/AboutImage.jpeg 640w"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/AboutImage.jpeg"
+              alt="#"
+              class="object-[50%_30%]"
+            />
+          </picture>
+          <h1
+            class="absolute top-4 left-6 md:top-6 md:left-10 z-10 text-white font-sans font-medium text-[37pt] leading-[1.2] tracking-wide"
+          >
+            Small practice.<br />Expansive thinking.
+          </h1>
+        </figure>
+
+        <!-- Caption -->
+        <p class="font-sans font-light text-[18pt] leading-tight">
+          DRIFT is an independent landscape architecture studio based in
+          Portland, Oregon. The practice brings curiosity, creativity, and a
+          considered approach to designing distinctive, meaningful places.
+        </p>
+
+        <div class="space-y-3">
+          <p class="font-sans font-medium text-[18pt] leading-tight !mt-10">
+            Ideas grounded in place.
+          </p>
+          <p class="project-text">
+            Every site presents its own opportunities and constraints, shaped by
+            its natural systems, history, architecture, and the patterns and
+            rhythms of daily life. DRIFT seeks to understand these relationships
+            and develop design responses that are both rooted in their
+            surroundings and ambitious in vision.
+          </p>
+          <p class="project-text">
+            The work favors clear, compelling ideas over unnecessary complexity,
+            with an appreciation for moments of discovery, thoughtful materials,
+            and attention to detail.
+          </p>
+
+          <p class="font-sans font-medium text-[18pt] leading-tight !mt-10">
+            Designed to change.
+          </p>
+          <p class="project-text">
+            Landscapes are never static. Plants mature, materials weather, and
+            patterns of use shift. DRIFT strives to provide a lasting framework
+            that anticipates these changes while allowing nature and human
+            experience to shape a place in unexpected ways.
+          </p>
+
+          <p class="font-sans font-medium text-[18pt] leading-tight !mt-10">
+            Places for people.
+          </p>
+          <p class="project-text">
+            Landscape has the power to restore, inspire, and enrich our lives,
+            offering refuge, fostering connection, and creating opportunities
+            for people to engage more fully with their surroundings. From
+            intimate gardens to public spaces, DRIFT seeks to create
+            environments that support well-being, encourage interaction, and
+            bring meaning to everyday experiences.
+          </p>
+          <p class="project-text mt-3">
+            In publically shared spaces, these qualities take on a broader
+            significance. Thoughtful design can remove barriers, invite
+            participation, and cultivate a sense of comfort, dignity, and
+            belonging in the public realm.
+          </p>
+          <p class="font-sans font-medium text-[18pt] leading-tight !mt-10">
+            The practice.
+          </p>
         </div>
 
-        <!-- Bottom Link -->
-        <p class="mt-12 font-condensed">
-          <a href="#" class="!font-medium hover:underline">VIEW EXPERIENCE ></a>
-        </p>
+        <!-- The practice. Section -->
+        <div class="mt-4">
+          <!-- Flex container for side-by-side layout -->
+          <div
+            class="flex flex-col md:flex-row gap-8 items-start overflow-hidden"
+          >
+            <!-- Left Column: Image -->
+            <div class="w-full md:w-[34%] shrink-0">
+              <img
+                src="images/desktop/Headshot-BW-WEB.jpeg"
+                alt="Tim Strand"
+                class="w-full aspect-[6/5] object-cover object-[33%_center]"
+              />
+            </div>
+
+            <!-- Right Column: Text -->
+            <div class="w-full md:w-[66%] space-y-4 project-text mr-12">
+              <p>
+                Founded in 2025 by Tim Strand, PLA, ASLA, DRIFT daws on more
+                than two decades of professional experience and a commitment to
+                thoughtful, engaging landscape design. As an independent
+                practice, DRIFT offers a collaborative, hands-on approach, with
+                direct involvement from concept through construction.
+              </p>
+              <p>
+                Tim&apos;s experience spans residential, parks, civic,
+                institutional, and infrastructure projects throughout the
+                Pacific Northwest and California. He holds a Master of Landscape
+                Architecture from the University of California, Berkeley, and a
+                Bachelor of Science in Natural Resources and Environment from
+                the University of Michigan.
+              </p>
+              <p>
+                DRIFT is a COBID-certified Emerging Small Business and holds
+                professional licensure in Oregon.
+              </p>
+              <!-- Bottom Link -->
+              <p class="project-text !font-medium !text-base !mt-8">
+                <a href="#" class="!font-medium hover:underline"
+                  >VIEW EXPERIENCE ></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -323,19 +234,7 @@
       Portland, OR | 503.928.3702| tim@drift-la.com
     </footer>
 
-    <script>
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      // ensure initial aria state
-      mobileBtn.setAttribute("aria-expanded", "false");
-      mobileBtn.addEventListener("click", () => {
-        // toggle visibility
-        const isOpen = !mobileMenu.classList.toggle("hidden");
-        // update aria-expanded for a11y
-        mobileBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

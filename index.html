@@ -22,15 +22,21 @@
     <link rel="icon" type="image/png" href="images/DRIFTfavicon.png" />
   </head>
 
-  <body class="text-white">
+  <body class="bg-white text-black">
     <header class="site-header inset-x-0 top-0 md:pl-12">
       <h1>
         <a href="projects.html" class="site-logo">
-          <img
-            src="/images/DRIFT-logo-white.svg"
-            alt="DRIFT logo"
-            class="block h-10 w-auto sm:w-[12.5vw] sm:h-auto ml-4 sm:ml-0"
-          />
+          <picture>
+            <source
+              srcset="/images/DRIFT-logo-white.svg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/images/DRIFT-logo-black.svg"
+              alt="DRIFT logo"
+              class="block h-10 w-auto sm:w-[12.5vw] sm:h-auto ml-4 sm:ml-0"
+            />
+          </picture>
         </a>
       </h1>
 
@@ -41,7 +47,7 @@
         aria-controls="mobile-menu"
         aria-expanded="false"
         aria-label="Open main menu"
-        class="site-menu-btn"
+        class="site-menu-btn text-black focus:ring-white"
       >
         <svg
           class="w-6 h-6"
@@ -61,10 +67,12 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden z-10"
+        class="mobile-nav hidden z-10"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
+          <a href="services.html" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">Experience</a>
           <a href="about.html" class="block hover:underline">About</a>
           <a href="contact.html" class="block hover:underline">Contact</a>
         </div>
@@ -78,12 +86,13 @@
         aria-label="Desktop hero slideshow"
       >
         <div class="slideshow absolute inset-0">
+          <!-- Michigan Residence -->
           <!-- prettier-ignore -->
           <picture class="fade-image image-1">
             <!-- 1) WebP sources -->
             <source
               type="image/webp"
-              media="(min-width:1280px)"
+              media="(min-width:1024px)"
               srcset="
                 images/desktop/hero-MI-residence.webp 1920w,
                 images/retina/hero-MI-residence.webp  3840w
@@ -119,6 +128,7 @@
             />
           </picture>
 
+          <!-- Hillside Residence Back Deck -->
           <!-- prettier-ignore -->
           <picture class="fade-image image-2">
             <!-- 1) WebP sources -->
@@ -160,6 +170,7 @@
             />
           </picture>
 
+          <!-- Bryant Woods Residence -->
           <picture class="fade-image image-3">
             <!-- 1) WebP sources -->
             <source
@@ -200,6 +211,7 @@
             />
           </picture>
 
+          <!-- Bridlemile Residence -->
           <!-- prettier-ignore -->
           <picture class="fade-image image-4">
             <!-- 1) WebP sources -->
@@ -241,6 +253,7 @@
             />
           </picture>
 
+          <!-- Hillside Residence Veg Garden -->
           <!-- prettier-ignore -->
           <picture class="fade-image image-5">
             <!-- 1) WebP sources -->
@@ -287,14 +300,10 @@
       </section>
 
       <!-- MOBILE hero slide stack -->
-      <section class="lg:hidden bg-white" aria-label="Mobile image stack">
+      <section class="md:hidden pt-28" aria-label="Mobile image stack">
         <div id="mobile-stack">
-          <!-- 5) Michigan Residence -->
-
-          <a
-            href="06-private-residence-michigan.html"
-            class="block mt-8 border-black relative"
-          >
+          <!-- Michigan Residence -->
+          <a href="michigan-residence.html" class="block border-black relative">
             <picture class="block">
               <source
                 type="image/webp"
@@ -314,152 +323,131 @@
               />
             </picture>
 
-            <!-- Project name -->
-            <!-- <span
-              class="absolute top-2 left-3 z-10 text-gray-300 font-sans font-bold text-sm"
-              >Michigan Residence</span
-            > -->
-            <!-- Credit -->
-            <!-- <span
-              class="absolute bottom-2 right-3 z-10 text-gray-300 font-sans text-[0.625rem]"
-            ></span> -->
-
             <!-- Gradients -->
             <div class="fade-top"></div>
             <div class="fade-bottom"></div>
           </a>
 
-          <!-- 6) Cascade Avenue Streetscape -->
-
+          <!-- Hillside Residence Back Deck -->
           <a
-            href="05-cascade-ave-streetscape-sisters.html"
+            href="hillside-residence.html"
             class="block mt-8 border-black relative"
           >
             <picture class="block">
               <source
                 type="image/webp"
-                srcset="
-                  images/mobile/hero6_cascade-avenue-streetscape.webp 640w
-                "
+                srcset="images/mobile/hero-25001-Back-Deck.webp 640w"
                 sizes="100vw"
               />
               <source
                 type="image/jpeg"
-                srcset="
-                  images/mobile/hero6_cascade-avenue-streetscape.jpeg 640w
-                "
+                srcset="images/mobile/hero-25001-Back-Deck.jpeg 640w"
                 sizes="100vw"
               />
               <img
-                src="images/mobile/hero6_cascade-avenue-streetscape.jpeg"
-                alt="Cascade Avenue streetscape in Sisters, Oregon"
+                src="images/mobile/hero-25001-Back-Deck.jpeg"
+                alt="Private residence in Michigan"
                 class="block w-full aspect-video object-cover"
                 loading="lazy"
               />
             </picture>
 
-            <!-- Project name -->
-            <span
-              class="absolute top-2 left-3 z-10 text-gray-300 font-sans font-bold text-sm"
-              >Cascade Avenue Streetscape</span
-            >
-            <!-- Credit -->
-            <span
-              class="absolute bottom-2 right-3 z-10 text-gray-300 font-sans text-[0.625rem]"
-              >Image Credit: GreenWorks</span
-            >
+            <!-- Gradients -->
+            <div class="fade-top"></div>
+            <div class="fade-bottom"></div>
+          </a>
+
+          <!-- Bryant Woods Residence -->
+          <a
+            href="bryant-woods-residence.html"
+            class="block mt-8 border-black relative"
+          >
+            <picture class="block">
+              <source
+                type="image/webp"
+                srcset="images/mobile/26005-Garden-TEMP.webp 640w"
+                sizes="100vw"
+              />
+              <source
+                type="image/jpeg"
+                srcset="images/mobile/26005-Garden-TEMP.jpeg 640w"
+                sizes="100vw"
+              />
+              <img
+                src="images/mobile/26005-Garden-TEMP.jpeg"
+                alt="Private residence in Michigan"
+                class="block w-full aspect-video object-cover"
+                loading="lazy"
+              />
+            </picture>
 
             <!-- Gradients -->
             <div class="fade-top"></div>
             <div class="fade-bottom"></div>
           </a>
 
-          <!-- 7) Kinetic Delight -->
-
-          <!-- <a
-            href="15-kinetic-delight-portland-winter-light-festival.html"
-            class="block mt-8 border-black relative"
-          >
-            <picture class="block">
-              <source
-                type="image/webp"
-                srcset="images/mobile/hero7_kinetic-delight.webp 640w"
-                sizes="100vw"
-              />
-              <source
-                type="image/jpeg"
-                srcset="images/mobile/hero7_kinetic-delight.jpeg 640w"
-                sizes="100vw"
-              />
-              <img
-                src="images/mobile/hero7_kinetic-delight.jpeg"
-                alt="Kinetic Delight interactive light feature"
-                class="block w-full aspect-video object-cover"
-                loading="lazy"
-              />
-            </picture> -->
-
-          <!-- Project name -->
-          <!-- <span
-              class="absolute top-2 left-3 z-10 text-gray-300 font-sans font-bold text-sm"
-              >Kinetic Delight</span
-            > -->
-          <!-- Credit -->
-          <!-- <span
-              class="absolute bottom-2 right-3 z-10 text-gray-300 font-sans text-[0.625rem]"
-              >Image Credit: Mayer/Reed</span
-            > -->
-
-          <!-- Gradients -->
-          <!-- <div class="fade-top"></div>
-            <div class="fade-bottom"></div>
-          </a> -->
-
-          <!-- 8) Legacy Emanuel Burn Unit Garden -->
-          <!-- 
+          <!-- Bridlemile Residence -->
           <a
-            href="10-legacy-oregon-burn-center-garden.html"
+            href="bridlemile-residence.html"
             class="block mt-8 border-black relative"
           >
             <picture class="block">
               <source
                 type="image/webp"
-                srcset="images/mobile/hero8_legacy-emanuel.webp 640w"
+                srcset="images/mobile/hero-26002-Frontage.webp 640w"
                 sizes="100vw"
               />
               <source
                 type="image/jpeg"
-                srcset="images/mobile/hero8_legacy-emanuel.jpeg 640w"
+                srcset="images/mobile/hero-26002-Frontage.jpeg 640w"
                 sizes="100vw"
               />
               <img
-                src="images/mobile/hero8_legacy-emanuel.jpeg"
-                alt="Legacy Emanuel Burn Unit garden"
+                src="images/mobile/hero-26002-Frontage.jpeg"
+                alt="Private residence in Michigan"
                 class="block w-full aspect-video object-cover"
                 loading="lazy"
               />
-            </picture> -->
+            </picture>
 
-          <!-- Project name -->
-          <!-- <span
-              class="absolute top-2 left-3 z-10 text-gray-300 font-sans font-bold text-sm"
-              >Legacy Emanuel Burn Unit Garden</span
-            > -->
-          <!-- Credit -->
-          <!-- <span
-              class="absolute bottom-2 right-3 z-10 text-gray-300 font-sans text-[0.625rem]"
-              >Image Credit: Mayer/Reed</span
-            > -->
-
-          <!-- Gradients -->
-          <!-- <div class="fade-top"></div>
+            <!-- Gradients -->
+            <div class="fade-top"></div>
             <div class="fade-bottom"></div>
-          </a> -->
+          </a>
+
+          <!-- Hillside Residence Veg Garden -->
+          <a
+            href="bridlemile-residence.html"
+            class="block mt-8 border-black relative"
+          >
+            <picture class="block">
+              <source
+                type="image/webp"
+                srcset="images/mobile/hero-25001-Veggie-Garden.webp 640w"
+                sizes="100vw"
+              />
+              <source
+                type="image/jpeg"
+                srcset="images/mobile/hero-25001-Veggie-Garden.jpeg 640w"
+                sizes="100vw"
+              />
+              <img
+                src="images/mobile/hero-25001-Veggie-Garden.jpeg"
+                alt="Private residence in Michigan"
+                class="block w-full aspect-video object-cover"
+                loading="lazy"
+              />
+            </picture>
+
+            <!-- Gradients -->
+            <div class="fade-top"></div>
+            <div class="fade-bottom"></div>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer text-black" role="contentinfo">
+    <footer class="site-footer bg-black text-white" role="contentinfo">
       © 2025 DRIFT Landscape Architecture, LLC
       <br class="sm:hidden" />
       <span class="hidden sm:inline"> | </span>
@@ -637,18 +625,9 @@
         credits[visible]?.classList.remove("hide");
         credits[visible]?.classList.add("show");
       }
-
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      if (mobileBtn && mobileMenu) {
-        mobileBtn.setAttribute("aria-expanded", "false");
-        mobileBtn.addEventListener("click", () => {
-          const isOpen = !mobileMenu.classList.toggle("hidden");
-          mobileBtn.setAttribute("aria-expanded", String(isOpen));
-        });
-      }
     </script>
+
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

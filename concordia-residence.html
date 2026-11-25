@@ -60,7 +60,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -75,7 +75,7 @@
     <!-- Content Container -->
     <main class="project-container">
       <!-- Hero Image -->
-      <figure class="project-hero aspect-[3/2]">
+      <figure class="hero-media">
         <picture>
           <!-- WebP sources for desktop -->
           <source
@@ -112,14 +112,14 @@
           <!-- Fallback image -->
           <img
             src="images/mobile/Concordia-1.jpeg"
-            alt="Michigan Residence landscape detail with fire pit and chairs"
+            alt="#"
             class="absolute inset-0 w-full h-full object-cover object-[50%_49%] xl:object-[50%_49%]"
           />
         </picture>
       </figure>
 
       <!-- Caption -->
-      <div class="space-y-1 sm:space-y-3">
+      <div class="space-y-4">
         <div class="project-header">
           <h1 class="project-title">Concordia Residence</h1>
         </div>
@@ -149,10 +149,10 @@
         </div>
       </div>
 
+      <!-- Image container -->
       <div class="project-images">
         <!-- Image 2 -->
-
-        <picture class="overflow-hidden">
+        <picture>
           <source
             media="(min-width:641px)"
             type="image/webp"
@@ -175,7 +175,7 @@
             src="images/desktop/Concordia-2.jpeg"
             alt="#"
             loading="lazy"
-            class="scale-105"
+            class="scale-[1.07]"
             srcset="
               images/desktop/Concordia-2.jpeg 1x,
               images/retina/Concordia-2.jpeg  2x
@@ -184,7 +184,7 @@
         </picture>
 
         <!-- Image 3 -->
-        <picture class="overflow-hidden">
+        <picture>
           <source
             media="(min-width:641px)"
             type="image/webp"
@@ -216,7 +216,7 @@
         </picture>
 
         <!-- Image 4 -->
-        <picture class="overflow-hidden">
+        <picture>
           <source
             media="(min-width:641px)"
             type="image/webp"
@@ -249,7 +249,7 @@
 
         <!-- Image 5 -->
         <div class="relative">
-          <picture class="overflow-hidden">
+          <picture>
             <source
               media="(min-width:641px)"
               type="image/webp"
@@ -270,7 +270,7 @@
 
             <img
               src="images/desktop/Concordia-5.jpeg"
-              alt="Current backyard with table and toys"
+              alt="#"
               class="object-[50%_40%]"
               loading="lazy"
               srcset="
@@ -304,7 +304,7 @@
 
           <img
             src="images/desktop/Concordia-6.jpeg"
-            alt="Current backyard with table and toys"
+            alt="#"
             loading="lazy"
             class="scale-[1.03] object-[50%_80%] translate-x-5"
             srcset="
@@ -316,7 +316,7 @@
 
         <!-- Image 7 -->
         <div class="relative">
-          <picture class="overflow-hidden">
+          <picture>
             <source
               media="(min-width:641px)"
               type="image/webp"
@@ -360,19 +360,7 @@
       Portland, OR | 503.928.3702 | tim@drift-la.com
     </footer>
 
-    <script>
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      // ensure initial aria state
-      mobileBtn.setAttribute("aria-expanded", "false");
-      mobileBtn.addEventListener("click", () => {
-        // toggle visibility
-        const isOpen = !mobileMenu.classList.toggle("hidden");
-        // update aria-expanded for a11y
-        mobileBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>

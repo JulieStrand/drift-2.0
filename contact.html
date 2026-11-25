@@ -60,7 +60,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -72,141 +72,132 @@
       </nav>
     </header>
 
-    <main class="project-container flex-1 pb-2 sm:pb-2">
-      <!-- Hero Image -->
-      <figure class="project-hero aspect-video xl:aspect-[16/7]">
-        <picture>
-          <!-- WebP sources for desktop -->
-          <source
-            type="image/webp"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/IMG_5774.webp 1920w,
-              images/retina/IMG_5774.webp  3840w
-            "
-          />
-          <!-- WebP sources for mobile -->
-          <source
-            type="image/webp"
-            media="(max-width:1279px)"
-            srcset="images/mobile/IMG_5774.webp 640w"
-          />
+    <!-- Main Content -->
+    <main class="project-container">
+      <div class="mb-8">
+        <!-- Hero Image -->
+        <figure class="hero-media">
+          <picture>
+            <!-- WebP sources for desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/Concordia-4.webp 1920w,
+                images/retina/Concordia-4.webp  3840w
+              "
+            />
+            <!-- WebP sources for mobile -->
+            <source
+              type="image/webp"
+              media="(max-width:1279px)"
+              srcset="images/mobile/Concordia-4.webp 640w"
+            />
 
-          <!-- JPEG fallbacks for desktop -->
-          <source
-            type="image/jpeg"
-            media="(min-width:1280px)"
-            srcset="
-              images/desktop/IMG_5774.jpeg 1920w,
-              images/retina/IMG_5774.jpeg  3840w
-            "
-          />
-          <!-- JPEG fallbacks for mobile -->
-          <source
-            type="image/jpeg"
-            media="(max-width:1279px)"
-            srcset="images/mobile/IMG_5774.jpeg 640w"
-          />
+            <!-- JPEG fallbacks for desktop -->
+            <source
+              type="image/jpeg"
+              media="(min-width:1280px)"
+              srcset="
+                images/desktop/Concordia-4.jpeg 1920w,
+                images/retina/Concordia-4.jpeg  3840w
+              "
+            />
+            <!-- JPEG fallbacks for mobile -->
+            <source
+              type="image/jpeg"
+              media="(max-width:1279px)"
+              srcset="images/mobile/Concordia-4.jpeg 640w"
+            />
 
-          <!-- Fallback image -->
-          <img
-            src="images/desktop/IMG_5774.jpeg"
-            alt="Three wooden planks laid on gravel, symbolizing building and collaboration."
-            class="absolute inset-0 w-full h-full object-cover object-bottom"
-          />
-        </picture>
-      </figure>
+            <!-- Fallback image -->
+            <img
+              src="images/desktop/Concordia-4.jpeg"
+              alt="Three wooden planks laid on gravel, symbolizing building and collaboration."
+              class="absolute inset-0 w-full h-full object-cover object-bottom"
+            />
+          </picture>
+          <div class="fade-top-services"></div>
+          <h1
+            class="absolute top-4 left-6 md:top-5 md:left-10 z-10 text-white font-sans font-medium text-[36pt] tracking-normal"
+          >
+            Let's collaborate.
+          </h1>
+        </figure>
 
-      <!-- Title, Subtitle, Divider -->
-
-      <div class="flex items-baseline space-x-4 mb-0">
-        <h1 class="project-title">Let's Collaborate</h1>
-        <span class="project-subtitle">&nbsp;</span>
-      </div>
-      <div class="project-divider"></div>
-
-      <div class="project-text space-y-4">
-        <p>
-          From homeowners to public agencies, architects to community partners
-          &mdash; if you share an interest in shaping resillient, meaningful
-          landscapes, we'd love to hear from you.
+        <div class="project-text space-y-4">
+          <p>
+            From homeowners to public agencies, architects to community partners
+            &mdash; if you share an interest in shaping resillient, meaningful
+            landscapes, we'd love to hear from you.
+          </p>
+          <div class="address">
+            <p class="!font-medium">DRIFT Landscape Architecture, LLC</p>
+            <p>3235 SE 69th Ave.</p>
+            <p>Portland, OR 97206</p>
+            <p>503.928.3702</p>
+          </div>
+          <div class="address">
+            <p class="!font-medium">New Projects & General Inquiries:</p>
+            <p>tim@drift-la.com</p>
+          </div>
+          <div class="social-links flex items-center gap-2">
+            <span>Follow us:</span>
+            <a
+              href="https://www.instagram.com/_driftla/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                class="w-5 h-5 text-black hover:text-gray-500 transition-colors"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/drift-landscape-architecture-llc"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="w-5 h-5 text-black hover:text-gray-500 transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="font-sans text-xs text-black text-left mt-8 mb-0">
+          Website by
+          <a
+            href="https://www.linkedin.com/in/julie-strand"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-700 hover:underline"
+          >
+            Julie Strand
+          </a>
         </p>
-        <div class="address">
-          <p class="!font-medium">DRIFT Landscape Architecture, LLC</p>
-          <p>3235 SE 69th Ave.</p>
-          <p>Portland, OR 97206</p>
-          <p>503.928.3702</p>
-        </div>
-        <div class="address">
-          <p class="!font-medium">New Projects & General Inquiries:</p>
-          <p>tim@drift-la.com</p>
-        </div>
-        <div class="social-links flex items-center gap-2">
-          <span>Follow us:</span>
-          <a
-            href="https://www.instagram.com/_driftla/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-          >
-            <svg
-              class="w-5 h-5 text-black hover:text-gray-500 transition-colors"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
-            <!-- old IG logo -->
-            <!-- <i
-              data-lucide="instagram"
-              class="w-5 h-5 text-black hover:text-gray-500"
-            ></i> -->
-          </a>
-          <a
-            href="https://www.linkedin.com/company/drift-landscape-architecture-llc"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            <svg
-              class="w-5 h-5 text-black hover:text-gray-500 transition-colors"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <!-- old LI logo -->
-            <!-- <i
-              data-lucide="linkedin"
-              class="w-5 h-5 text-black hover:text-gray-500"
-            ></i> -->
-          </a>
-        </div>
       </div>
-      <p class="font-sans text-xs text-black text-left mt-8 mb-0">
-        Website by
-        <a
-          href="https://www.linkedin.com/in/julie-strand"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-700 hover:underline"
-        >
-          Julie Strand
-        </a>
-      </p>
     </main>
 
     <footer class="site-footer inset-x-0 bottom-0" role="contentinfo">
@@ -216,20 +207,8 @@
       Portland, OR | 503.928.3702 | tim@drift-la.com
     </footer>
 
-    <script>
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      // ensure initial aria state
-      mobileBtn.setAttribute("aria-expanded", "false");
-      mobileBtn.addEventListener("click", () => {
-        // toggle visibility
-        const isOpen = !mobileMenu.classList.toggle("hidden");
-        // update aria-expanded for a11y
-        mobileBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

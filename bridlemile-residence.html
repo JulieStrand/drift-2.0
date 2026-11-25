@@ -60,7 +60,7 @@
       <nav
         id="mobile-menu"
         aria-labelledby="mobile-menu-btn"
-        class="absolute inset-x-0 top-full bg-black text-white md:hidden hidden"
+        class="mobile-nav hidden"
       >
         <div class="space-y-4 p-4">
           <a href="projects.html" class="block hover:underline">Projects</a>
@@ -75,7 +75,7 @@
     <!-- Content Container -->
     <main class="project-container">
       <!-- Hero Image -->
-      <figure class="project-hero aspect-[3/2]">
+      <figure class="hero-media">
         <picture>
           <!-- WebP sources for desktop -->
           <source
@@ -112,15 +112,15 @@
           <!-- Fallback image -->
           <img
             src="images/mobile/26002-Front-Entry-2.jpeg"
-            alt="Front facadde of a white, 2-story house with a yard and plantings"
+            alt="#"
             class="w-full h-full object-cover"
           />
         </picture>
       </figure>
 
       <!-- Caption -->
-      <div class="space-y-1 sm:space-y-3">
-        <div class="project-header">
+      <div class="space-y-4">
+        <div>
           <h1 class="project-title">Bridlemile Residence</h1>
         </div>
         <div class="project-text">
@@ -154,7 +154,7 @@
       <!-- Image container -->
       <div class="project-images">
         <!-- Image 2 -->
-        <picture class="overflow-hidden">
+        <picture>
           <!-- desktop crop: 1× for regular DPR, 2× for Retina -->
           <source
             media="(min-width:641px)"
@@ -217,7 +217,7 @@
         </picture>
 
         <!-- Image 4 -->
-        <picture class="overflow-hidden">
+        <picture>
           <source
             media="(min-width:641px)"
             srcset="
@@ -247,7 +247,7 @@
         </picture>
 
         <!-- Image 5 -->
-        <picture class="overflow-hidden">
+        <picture>
           <source
             media="(min-width:641px)"
             srcset="
@@ -278,7 +278,7 @@
 
         <!-- Image 6 -->
         <div class="relative">
-          <picture class="overflow-hidden">
+          <picture>
             <source
               media="(min-width:641px)"
               srcset="
@@ -320,19 +320,7 @@
       Portland, OR | 503.928.3702 | tim@drift-la.com
     </footer>
 
-    <script>
-      // MOBILE MENU TOGGLE
-      const mobileBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      // ensure initial aria state
-      mobileBtn.setAttribute("aria-expanded", "false");
-      mobileBtn.addEventListener("click", () => {
-        // toggle visibility
-        const isOpen = !mobileMenu.classList.toggle("hidden");
-        // update aria-expanded for a11y
-        mobileBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    </script>
+    <!-- Mobile menu toggle -->
+    <script src="scripts/mobile-nav.js" defer></script>
   </body>
 </html>
