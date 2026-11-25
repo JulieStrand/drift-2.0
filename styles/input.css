@@ -38,11 +38,11 @@
   .site-header {
     @apply fixed inset-x-0 top-0 z-20
            px-4 sm:px-6 lg:px-8
-           h-20 md:h-20 lg:h-[2in]  
+           h-20 lg:h-[2in]  
            /* mobile: logo left, hamburger right */
            flex items-center justify-between
            /* desktop: push header content down a bit */
-           md:items-start md:pt-6
+           md:items-start md:pt-10
            /* default mobile: white bg, black text */
            /* bg-black lg:bg-transparent text-black */
            /* desktop override: gradient bg, white text */
@@ -106,12 +106,11 @@
            pointer-events-none;
   }
   .site-footer {
-    @apply relative w-full z-30 font-condensed font-light
+    @apply sticky top-[100vh] w-full z-30 font-condensed font-light
           /* mobile typography (slightly smaller) then bump up on sm/md */
            text-xs md:text-sm
            /* gutters: narrow on phones, then wider as viewport grows */
            px-4 sm:px-6 lg:px-8
-  
            py-4
            text-center;
   }
@@ -128,7 +127,7 @@
   /* Scrollable viewport for the stack */
   #mobile-stack {
     /* This positions the container below the 4rem (h-20) header */
-    @apply pt-20 md:pt-20;
+    @apply pt-16 md:pt-20;
   }
 
   /* add gradients to top and bottom of mobile home page stack */
@@ -160,6 +159,19 @@
     & img {
       @apply block w-full h-full object-cover;
     }
+  }
+
+  .image-heading {
+    @apply absolute left-5 sm:left-7 
+    top-2 sm:top-6 lg:top-8 lg:left-10 z-10 
+    text-white font-sans font-medium 
+    text-2xl sm:text-4xl lg:text-[42pt] 
+    tracking-normal lg:leading-[1.20];
+  }
+
+  .image-caption {
+    @apply font-sans font-light leading-tight 
+    text-base sm:text-xl lg:text-2xl;
   }
 
   /* PROJECTS page classes */
@@ -226,7 +238,8 @@
 
   /* PROJECT PAGES classes */
   .project-container {
-    @apply pt-28 md:pt-[108px] pb-4 sm:pb-[0.25in] px-6 sm:px-[0.375in] w-full md:pr-12 md:pl-[33.333%];
+    @apply pt-28 md:pt-[108px] pb-4 sm:pb-[0.25in] px-6 
+    sm:px-[0.375in] w-full md:pr-12 md:pl-[33.333%];
   }
   .project-hero {
     @apply relative w-full h-auto overflow-hidden mb-[0.275in];
