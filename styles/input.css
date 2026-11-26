@@ -20,10 +20,10 @@
 
 @layer components {
   .site-hero {
-    @apply w-full md:overflow-hidden;
+    @apply w-full overflow-hidden;
   }
   .desktop-hero {
-    @apply hidden md:block relative min-h-screen text-white; /* creates a positioning context */
+    @apply relative h-[100dvh] overflow-hidden text-white; /* creates a positioning context */
   }
   .about-hero {
     @apply relative w-full h-auto aspect-[19/9] overflow-hidden my-10;
@@ -46,7 +46,7 @@
            /* default mobile: white bg, black text */
            /* bg-black lg:bg-transparent text-black */
            /* desktop override: gradient bg, white text */
-           lg:bg-gradient-to-b lg:from-black/75 lg:to-transparent lg:text-white
+           bg-gradient-to-b from-black/75 to-transparent text-white
            font-sans font-medium;
   }
 
@@ -238,7 +238,7 @@
 
   /* PROJECT PAGES classes */
   .project-container {
-    @apply pt-28 md:pt-[108px] pb-4 sm:pb-[0.25in] px-6 
+    @apply pt-28 md:pt-[108px] pb-4 sm:pb-[0.25in] md:pb-16 px-6 
     sm:px-[0.375in] w-full md:pr-12 md:pl-[33.333%];
   }
   .project-hero {
@@ -248,20 +248,21 @@
     @apply flex flex-col sm:flex-row sm:items-baseline sm:space-x-4;
   }
   .project-title {
-    @apply font-sans font-light text-[18pt] leading-none;
+    @apply font-sans text-lg md:text-xl lg:text-2xl 
+    bottom-2 leading-none;
   }
   .project-specs {
-    @apply font-condensed font-medium text-[10pt] leading-tight;
+    @apply font-condensed font-medium text-[12pt] leading-tight;
   }
   .project-divider {
     @apply border-t border-black w-full mb-5;
     border-top-width: 1px;
   }
   .project-text {
-    @apply font-condensed font-light text-base leading-tight;
+    @apply font-condensed font-light text-[12pt] leading-tight;
   }
   .project-text p {
-    @apply font-condensed font-light text-base leading-tight;
+    @apply font-condensed font-light text-[12pt] leading-tight;
   }
   .project-image {
     @apply block w-full object-cover;
@@ -333,7 +334,7 @@
 
 @layer utilities {
   .fade-image {
-    @apply absolute w-full h-full object-cover;
+    @apply absolute -left-[12%] w-[124%] md:left-0 md:w-full h-full object-cover;
     opacity: 0;
     transform-origin: center center;
     object-position: center 50%;
@@ -478,5 +479,39 @@
   to {
     transform: scale(1.1) translate(-3%, 0%);
     /* translateZ(0); */
+  }
+}
+
+/* added to see if slideshow works on mobile */
+@media (max-width: 767px) {
+  .fade-image.pan-lr {
+    animation:
+      pan-lr-sm 8s linear both,
+      fade-in-out 6s ease-in-out both;
+  }
+  .fade-image.pan-rl {
+    animation:
+      pan-rl-sm 8s linear both,
+      fade-in-out 6s ease-in-out both;
+  }
+  .fade-link.show,
+  .fade-credit.show {
+    animation-duration: 6s;
+  }
+}
+@keyframes pan-lr-sm {
+  from {
+    transform: translateX(-12%);
+  }
+  to {
+    transform: translateX(12%);
+  }
+}
+@keyframes pan-rl-sm {
+  from {
+    transform: translateX(12%);
+  }
+  to {
+    transform: translateX(-12%);
   }
 }
