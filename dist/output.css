@@ -1697,6 +1697,14 @@ html,
   margin-top: 1em;
 }
 
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1804,6 +1812,10 @@ html,
 
 .w-full{
   width: 100%;
+}
+
+.w-\[16vw\]{
+  width: 16vw;
 }
 
 .max-w-\[78ch\]{
@@ -2855,6 +2867,10 @@ html,
     width: 12.5vw;
   }
 
+  .sm\:w-\[20vw\]{
+    width: 20vw;
+  }
+
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -3019,6 +3035,10 @@ html,
     height: 2in;
   }
 
+  .lg\:w-\[12\.5vw\]{
+    width: 12.5vw;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3064,6 +3084,10 @@ html,
 }
 
 @media (min-width: 1280px){
+  .xl\:w-\[12\.5vw\]{
+    width: 12.5vw;
+  }
+
   .xl\:object-\[50\%_49\%\]{
     -o-object-position: 50% 49%;
        object-position: 50% 49%;
